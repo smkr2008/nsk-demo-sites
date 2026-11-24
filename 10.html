@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="ru" class="no-js" data-variant="light-minimal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ремонт обуви и ключей в Новосибирске</title>
+<meta name="description" content="Компания по изготовлению ключей и ремонту обуви: Вещи, которые служат дольше. Рейтинг 5 на 2ГИС. Адрес: Пермская улица, 27.">
+<meta name="theme-color" content="#f1f0ec">
+<link rel="icon" href="">
+<script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");</script>
+<style>
+  :root{--bg:#f1f0ec;--panel:#e6e4dc;--ink:#121410;--muted:#63665e;--line:rgba(18,20,16,.15);--accent:#1f4fa3;--accent-ink:#f7faff;--soft:rgba(31,79,163,.09);
+    --navh:72px;--sans:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;--mono:"Cascadia Mono",Consolas,"Courier New",monospace}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + 20px)}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.62 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--accent);color:var(--accent-ink)}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{width:100%;max-width:1320px;margin:0 auto;padding:0 clamp(20px,3.4vw,52px)}
+  .progress{position:fixed;top:0;left:0;width:100%;height:2px;z-index:90;pointer-events:none;transform:scaleX(0);transform-origin:0 50%;background:var(--accent)}
+  .nav{position:sticky;top:0;z-index:80;background:var(--bg);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+  .nav.scrolled{box-shadow:0 1px 0 var(--line)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:var(--navh)}
+  .brand{display:inline-flex;align-items:baseline;gap:10px;text-decoration:none;font-weight:700;font-size:16px;letter-spacing:-.02em;white-space:nowrap;max-width:42%;overflow:hidden;text-overflow:ellipsis}
+  .brand i{width:7px;height:7px;background:var(--accent);display:inline-block;flex:0 0 auto}
+  .nav-links{display:flex;gap:26px;font-size:12.5px;letter-spacing:.04em}
+  .nav-links a{color:var(--muted);text-decoration:none;padding:6px 0;border-bottom:1px solid transparent;transition:color .25s,border-color .25s}
+  .nav-links a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px;white-space:nowrap}
+  .nav-cta span{color:var(--accent);transition:transform .3s}
+  .nav-cta:hover span{transform:translateX(4px)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;font:600 13.5px/1 var(--sans);text-decoration:none;border:1px solid transparent;border-radius:2px;transition:background .25s,color .25s,border-color .25s,transform .25s}
+  .btn .arr{transition:transform .3s}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn-solid{background:var(--accent);color:var(--accent-ink)}
+  .btn-solid:hover{transform:translateY(-1px);filter:brightness(.94)}
+  .btn-line{border-color:var(--line);color:var(--ink);background:transparent}
+  .btn-line:hover{border-color:var(--ink)}
+  .btn-text{padding:15px 4px;color:var(--muted);font-weight:500}
+  .btn-text:hover{color:var(--ink)}
+  .btn-ink{background:var(--ink);color:var(--bg)}
+  .btn-ink:hover{transform:translateY(-1px);opacity:.9}
+  .btn-ghost{background:transparent;border-color:currentColor;color:inherit;opacity:.85}
+  .btn-ghost:hover{opacity:1;transform:translateY(-1px)}
+  .hero{position:relative;padding:0}
+  .hero > .wrap{min-height:calc(100svh - var(--navh));display:flex;flex-direction:column;justify-content:center;padding-top:clamp(18px,3vh,36px)}
+  .hero-grid{display:grid;grid-template-columns:1.16fr .84fr;gap:clamp(28px,4.4vw,64px);align-items:center}
+  .hero-topline{display:flex;justify-content:space-between;gap:16px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:clamp(24px,3.4vw,40px)}
+  h1{font-size:var(--fs);line-height:.9;letter-spacing:-.045em;text-transform:uppercase;font-weight:700;margin:0 0 22px;text-wrap:balance}
+  .tagline{font-size:clamp(17px,1.8vw,21px);line-height:1.45;color:var(--muted);max-width:34ch;margin:0 0 30px}
+  .hero-full{font-size:12px;line-height:1.55;color:var(--muted);letter-spacing:.02em;margin:-4px 0 18px;max-width:54ch}
+  .hero-stats{display:flex;flex-wrap:wrap;gap:0;margin:0 0 30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat{display:flex;flex-direction:column;gap:5px;padding:16px 24px 15px 0;margin-right:24px;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:0;margin-right:0;padding-right:0}
+  .stat-val{font-size:clamp(26px,2.8vw,38px);font-weight:700;line-height:1;letter-spacing:-.03em;display:flex;align-items:baseline;gap:5px}
+  .stat-val.is-small{font-size:clamp(18px,1.8vw,24px)}
+  .stat-unit{font-size:.4em;font-weight:500;color:var(--muted)}
+  .stat-label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .hero-cta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .hero-meta{display:flex;align-items:center;flex-wrap:wrap;gap:12px;font-size:12px;letter-spacing:.02em;color:var(--muted);padding:18px 0;margin-top:clamp(26px,4.5vh,56px);border-top:1px solid var(--line)}
+  .hero-meta .sep{color:var(--line);opacity:.9}
+  .hero-meta a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+  .hero-meta a:hover{border-bottom-color:var(--accent)}
+  .hero-meta .scroll{margin-left:auto;text-transform:uppercase;letter-spacing:.16em;font-size:10.5px}
+  .hero-media{min-width:0}
+  .media-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.35fr 1fr;gap:10px}
+  .media{position:relative;margin:0;overflow:hidden;background:var(--panel)}
+  .media.m1{grid-row:span 2;aspect-ratio:3/4}
+  .media.m2,.media.m3{aspect-ratio:1}
+  .media img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+  .media:hover img{transform:scale(1.04)}
+  .media figcaption{position:absolute;left:0;bottom:0;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:rgba(0,0,0,.45);padding:5px 8px}
+  .media-empty-grid{grid-template-rows:1fr;grid-template-columns:1fr}
+  .media-empty{aspect-ratio:4/5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:repeating-linear-gradient(135deg,var(--panel) 0 2px,transparent 2px 14px),var(--bg);overflow:hidden}
+  .media-empty span{font-size:clamp(80px,14vw,150px);font-weight:700;line-height:1;color:var(--accent);opacity:.8}
+  .media-empty em{font-style:normal;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .g-fallback{aspect-ratio:4/5;display:grid;place-items:center;background:repeating-linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:25% 100%;border:1px solid var(--line)}
+  .g-fallback span{font-size:clamp(60px,8vw,110px);font-weight:700;color:var(--accent);opacity:.45}
+  .g-empty figcaption span{color:var(--accent)}
+  .ticker{overflow:hidden;margin-top:clamp(30px,4vw,56px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:11px 0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+  .ticker-track{display:flex;width:max-content;animation:tick 44s linear infinite}
+  .t-group{display:flex}
+  .t-item{display:inline-flex;align-items:center;gap:18px;padding:0 18px;white-space:nowrap;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  .t-item i{font-style:normal;color:var(--accent)}
+  @keyframes tick{to{transform:translateX(-50%)}}
+  section{position:relative;padding:clamp(64px,7.4vw,110px) 0}
+  section[id]{scroll-margin-top:calc(var(--navh) + 12px)}
+  .sec-head{display:grid;grid-template-columns:110px 1fr;gap:clamp(16px,3vw,40px);align-items:start;padding-top:14px;border-top:1px solid var(--ink);margin-bottom:clamp(34px,4.4vw,56px)}
+  .sec-num{font-size:11px;letter-spacing:.2em;color:var(--muted);padding-top:8px}
+  .sec-title-wrap h2{font-size:clamp(30px,4.4vw,54px);line-height:1.02;letter-spacing:-.04em;font-weight:700;margin:0}
+  .sec-intro{color:var(--muted);font-size:15px;max-width:56ch;margin:12px 0 0}
+  .price-badge{display:inline-flex;align-items:baseline;gap:10px;margin-top:16px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+  .price-badge b{font-size:16px;letter-spacing:-.01em;color:var(--ink);text-transform:none;font-weight:700}
+  .about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(28px,5vw,80px);align-items:start}
+  .lead{font-size:clamp(20px,2.3vw,28px);line-height:1.42;letter-spacing:-.015em;margin:0 0 22px;white-space:pre-line}
+  .about-copy p{color:var(--muted);max-width:60ch;margin:0 0 18px;font-size:15.5px}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:24px}
+  .tag{font-size:11px;letter-spacing:.04em;border:1px solid var(--line);padding:6px 10px;color:var(--muted);transition:border-color .25s,color .25s}
+  .tag:hover{border-color:var(--accent);color:var(--accent)}
+  .facts{margin:0;border-top:1px solid var(--line)}
+  .fact{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line);margin:0}
+  .fact dt{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0}
+  .fact dd{margin:0;font-size:14px;font-weight:600;text-align:right}
+  .fact dd span[data-count]{font-size:16px}
+  .facts-link{display:flex;justify-content:space-between;align-items:center;padding:15px 0;color:var(--accent);text-decoration:none;font-size:12px;letter-spacing:.06em;border-bottom:1px solid var(--line)}
+  .facts-link:hover span:last-child{transform:translateX(4px)}
+  .facts-link span:last-child{transition:transform .3s}
+  .table{border-top:1px solid var(--ink)}
+  .row{display:grid;grid-template-columns:54px minmax(0,1fr) auto 24px;gap:clamp(12px,2.4vw,30px);align-items:start;padding:22px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:background .25s,padding .25s}
+  .row:hover{background:var(--soft);padding-left:12px;padding-right:12px}
+  .row-n{font-size:11px;letter-spacing:.14em;color:var(--muted);padding-top:8px}
+  .row-title{display:block;font-size:clamp(20px,2.2vw,28px);font-weight:700;letter-spacing:-.02em;line-height:1.15;margin-bottom:6px}
+  .row-desc{display:block;color:var(--muted);font-size:14px;max-width:54ch;line-height:1.55}
+  .row-tags{display:block;margin-top:8px;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);opacity:.85}
+  .row-price{font-size:15px;font-weight:700;white-space:nowrap;padding-top:6px;text-align:right}
+  .row-arr{font-size:16px;color:var(--accent);opacity:0;transform:translateX(-6px);transition:opacity .3s,transform .3s;padding-top:7px}
+  .row:hover .row-arr{opacity:1;transform:none}
+  .extras{display:flex;align-items:baseline;gap:16px;padding-top:24px;flex-wrap:wrap}
+  .extras-label{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .extras .tags{margin-top:0}
+  .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:clamp(20px,3vw,44px)}
+  .menu-col{border-top:1px solid var(--ink);padding-top:14px}
+  .menu-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:14px}
+  .menu-head h3{font-size:22px;font-weight:700;letter-spacing:-.02em;margin:0}
+  .menu-head span{font-size:11px;color:var(--muted);letter-spacing:.14em}
+  .menu-col ul{list-style:none;margin:0;padding:0}
+  .menu-col li{display:flex;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink)}
+  .menu-col li::before{content:"—";color:var(--accent);flex:0 0 auto}
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(10px,1.6vw,18px)}
+  .g{margin:0}
+  .g img{width:100%;aspect-ratio:4/5;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+  .g:hover img{transform:scale(1.04)}
+  .g figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:9px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);border-top:1px solid var(--line);margin-top:9px}
+  .reviews-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(28px,5vw,72px);align-items:start}
+  .rating-side .rating-num{font-size:clamp(72px,10vw,128px);font-weight:700;line-height:.82;letter-spacing:-.05em;display:flex;align-items:flex-start;gap:8px}
+  .rating-side .rating-num small{font-size:.22em;color:var(--muted);font-weight:500;margin-top:.5em;letter-spacing:0}
+  .stars{color:var(--accent);letter-spacing:3px;font-size:15px}
+  .rating-side .stars{font-size:18px;letter-spacing:4px;display:block;margin:18px 0 12px}
+  .rating-side p{color:var(--muted);font-size:13px;margin:0 0 18px}
+  .rating-side a{color:var(--accent);text-decoration:none;font-size:12px;letter-spacing:.08em;border-bottom:1px solid var(--accent);padding-bottom:4px}
+  .quote-list{border-top:1px solid var(--ink)}
+  .review-empty{display:flex;flex-direction:column;gap:10px;align-items:flex-start;border:1px solid var(--line);padding:28px;color:var(--muted);font-size:14px}
+  .review-empty b{font-size:20px;font-weight:700;color:var(--ink)}
+  .review-empty a{color:var(--accent);text-decoration:none;font-size:12px;border-bottom:1px solid var(--accent);padding-bottom:3px}
+  .quote{margin:0;padding:22px 0 24px;border-bottom:1px solid var(--line)}
+  .quote-meta{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:12px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .quote blockquote{margin:0 0 16px;font-size:clamp(17px,1.9vw,22px);line-height:1.5;letter-spacing:-.01em}
+  .quote figcaption{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--muted)}
+  .q-av{display:grid;place-items:center;width:28px;height:28px;background:var(--accent);color:var(--accent-ink);font-size:11px;font-weight:700;border-radius:50%}
+  .q-src{margin-left:auto;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--line)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(30px,5vw,72px);align-items:start}
+  .visit-address{font-size:clamp(28px,3.4vw,44px);line-height:1.05;letter-spacing:-.04em;font-weight:700;margin:0 0 10px}
+  .visit-sub{color:var(--muted);font-size:13px;margin:0 0 24px}
+  .hours{border-top:1px solid var(--ink)}
+  .hour{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line);font-size:13px;color:var(--muted)}
+  .hour b{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+  .hour.today{color:var(--ink)}
+  .hour.today span::before{content:"";display:inline-block;width:6px;height:6px;background:var(--accent);margin-right:8px;vertical-align:middle}
+  .map-wrap{margin:0}
+  .map{position:relative;aspect-ratio:1.14;border:1px solid var(--line);background:var(--panel);overflow:hidden}
+  .map-lines{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:12.5% 12.5%;opacity:.55}
+  .map-road{position:absolute;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line);opacity:.9}
+  .map-road.a{width:150%;height:16px;left:-25%;top:38%;transform:rotate(-8deg)}
+  .map-road.b{width:150%;height:10px;left:-25%;top:72%;transform:rotate(6deg)}
+  .map-road.c{width:70%;height:12px;left:16%;top:-8%;transform:rotate(72deg)}
+  .map-blk{position:absolute;background:var(--bg);border:1px solid var(--line)}
+  .map-blk.d1{width:24%;height:18%;left:8%;top:14%;transform:rotate(-3deg)}
+  .map-blk.d2{width:16%;height:24%;left:16%;top:48%;transform:rotate(3deg)}
+  .map-blk.d3{width:20%;height:14%;right:12%;top:56%;transform:rotate(-2deg)}
+  .map-blk.d4{width:14%;height:11%;right:22%;top:16%;transform:rotate(5deg)}
+  .map-pin{position:absolute;left:62%;top:46%;width:14px;height:14px;background:var(--accent);border-radius:50%;z-index:2}
+  .map-pin::before{content:"";position:absolute;inset:-9px;border:1px solid var(--accent);border-radius:50%}
+  .map-label{position:absolute;left:12px;bottom:12px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;background:var(--bg);border:1px solid var(--line);padding:5px 9px}
+  .map-wrap figcaption{font-size:11px;color:var(--muted);margin-top:10px}
+  .map-wrap figcaption a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+  section.contact-band{background:var(--accent);color:var(--accent-ink);border-top:1px solid var(--ink)}
+  .contact-inner{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:end}
+  .contact-label{font-size:10.5px;letter-spacing:.22em;text-transform:uppercase;opacity:.7;margin-bottom:14px;display:flex;gap:14px}
+  .contact-title{font-size:clamp(34px,5vw,68px);line-height:.98;letter-spacing:-.045em;font-weight:700;margin:0 0 12px}
+  .contact-intro{font-size:15px;line-height:1.5;opacity:.82;max-width:48ch;margin:0 0 22px}
+  .big-phone{display:inline-block;font-size:clamp(26px,4.2vw,56px);font-weight:700;letter-spacing:-.04em;text-decoration:none;line-height:1.05;margin:0 0 22px;border-bottom:2px solid transparent;transition:border-color .25s}
+  .big-phone:hover{border-bottom-color:currentColor}
+  .contact-actions{display:flex;gap:9px;flex-wrap:wrap}
+  .contact-band .btn-ink{background:var(--accent-ink);color:var(--accent)}
+  .contact-band .btn-ghost{border-color:rgba(0,0,0,.35);color:inherit;opacity:1}
+  .contact-meta{display:grid;gap:0;border-top:1px solid rgba(0,0,0,.28)}
+  .cm{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;padding:11px 0;border-bottom:1px solid rgba(0,0,0,.28);font-size:13px}
+  .cm span{font-size:9.5px;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+  .cm b{font-weight:600;text-align:right}
+  .cm a{text-decoration:none;border-bottom:1px solid rgba(0,0,0,.35)}
+  footer{border-top:1px solid var(--line);padding:clamp(40px,5vw,64px) 0 34px}
+  .footer-big{font-size:clamp(34px,7vw,104px);font-weight:700;letter-spacing:-.05em;line-height:.94;text-transform:uppercase;color:var(--ink);opacity:.14;user-select:none;margin:0 0 30px;overflow-wrap:break-word}
+  .footer-row{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted)}
+  .footer-brand{display:flex;align-items:center;gap:8px;color:var(--ink);font-weight:600}
+  .footer-brand i{width:6px;height:6px;background:var(--accent);display:inline-block}
+  .footer-row a{text-decoration:none;border-bottom:1px solid transparent}
+  .footer-row a:hover{border-bottom-color:var(--accent);color:var(--ink)}
+  .footer-note{max-width:48ch}
+  .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0ms)}
+  .js .reveal.in{opacity:1;transform:none}
+  .rise{animation:rise .7s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--d,0s)}
+  @keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  .settled .reveal,.settled .rise{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+  @media(max-width:1080px){.hero-grid{grid-template-columns:1fr;gap:36px;align-items:start}.hero-media{max-width:560px}.about-grid{grid-template-columns:1fr;gap:32px}.reviews-grid{grid-template-columns:1fr;gap:30px}.visit-grid{grid-template-columns:1fr;gap:34px}.contact-inner{grid-template-columns:1fr;gap:28px;align-items:start}.sec-head{grid-template-columns:70px 1fr}}
+  @media(max-width:860px){:root{--navh:62px}.nav-links{display:none}.brand{font-size:15px}h1{font-size:calc(var(--fs) * .5)}.hero{padding-top:24px}.hero > .wrap{min-height:0;padding-top:0}.media-grid{grid-template-rows:1.2fr 1fr}.row{grid-template-columns:34px minmax(0,1fr) auto;grid-template-areas:"n main price" ". arr arr"}.row-n{grid-area:n}.row-main{grid-area:main}.row-price{grid-area:price;font-size:13px;padding-top:4px}.row-arr{grid-area:arr;justify-self:start;opacity:1;transform:none;padding-top:2px}.gallery{grid-template-columns:1fr}.g img{aspect-ratio:4/3}.sec-head{grid-template-columns:1fr;gap:8px}.sec-num{padding-top:0}.footer-row{flex-direction:column;gap:12px}.contact-band .contact-meta{width:100%}}
+  @media(max-width:560px){.wrap{padding:0 18px}.hero-cta{flex-direction:column;align-items:stretch}.hero-cta .btn{justify-content:center}.hero-meta{gap:8px}.hero-meta .scroll{display:none}.contact-actions{flex-direction:column;align-items:stretch}.contact-actions .btn{justify-content:center}.stat{padding-right:16px;margin-right:16px}.media-grid{gap:7px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.js .reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="nav" id="nav"><div class="wrap nav-in">
+  <a class="brand" href="#top"><i></i>Ремонт обуви и ключей</a>
+  <nav class="nav-links" aria-label="Разделы">
+    <a href="#about">О нас</a><a href="#services">Услуги</a>
+    <a href="#gallery">Фото</a><a href="#reviews">Отзывы</a>
+    <a href="#visit">Как найти</a><a href="#contacts">Контакты</a>
+  </nav>
+  <a class="nav-cta" href="https://wa.me/79618714934">Написать <span>→</span></a>
+</div></header>
+<main id="top">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="hero-topline rise"><span>ремонт обуви и ключей — Новосибирск</span><span>2026</span></div>
+        <h1 class="rise" style="--fs:132px;--d:.06s">РЕМОНТ ОБУВИ И КЛЮЧЕЙ</h1>
+        <p class="hero-full rise" style="--d:.1s">Компания по изготовлению ключей и ремонту обуви</p>
+        <p class="tagline rise" style="--d:.14s">Вещи, которые служат дольше.</p>
+        <div class="hero-stats rise" style="--d:.2s"><div class="stat"><span class="stat-val"><span data-count="5" data-dec="1">5</span><span class="stat-unit">/ 5</span></span><span class="stat-label">рейтинг на 2ГИС</span></div><div class="stat"><span class="stat-val"><span data-count="34">34</span></span><span class="stat-label">отзыва</span></div><div class="stat"><span class="stat-val is-small">11:00–19:00</span><span class="stat-label">сегодня</span></div></div>
+        <div class="hero-cta rise" style="--d:.26s">
+          <a class="btn btn-solid" href="https://wa.me/79618714934">Написать в WhatsApp<span class="arr">→</span></a>
+          <a class="btn btn-line" href="https://t.me/+79618714934">Telegram</a>
+          <a class="btn btn-text" href="#visit">Как найти →</a>
+        </div>
+      </div>
+      <div class="hero-media rise" style="--d:.12s"><div class="media-grid"><figure class="media m1" data-reveal><img src="https://i7.photo.2gis.com/photo-gallery/56ec3c7c-ee6a-4d6a-9387-b7bf15d93c39_656x340.jpg" alt="Компания по изготовлению ключей и ремонту обуви — фото из 2ГИС" loading="eager"><figcaption>01 — Работы</figcaption></figure><figure class="media m2" data-reveal><img src="https://i9.photo.2gis.com/photo-gallery/7fc3a962-1f1a-4d55-b0b3-5c2b78d834de_656x340.jpg" alt="Компания по изготовлению ключей и ремонту обуви — фото из 2ГИС" loading="eager"><figcaption>02 — Инструмент</figcaption></figure><figure class="media m3" data-reveal><img src="https://i8.photo.2gis.com/photo-gallery/41207623-ac24-48e2-86b3-4e34a9a1ff33_656x340.jpg" alt="Компания по изготовлению ключей и ремонту обуви — фото из 2ГИС" loading="eager"><figcaption>03 — Мастерская</figcaption></figure></div></div>
+    </div>
+    <div class="hero-meta rise" style="--d:.3s"><span>Пермская улица, 27</span><span class="sep">/</span><a href="https://2gis.ru/novosibirsk/firm/70000001082007588">2ГИС →</a><span class="sep">/</span><span class="scroll">Листайте ↓</span></div>
+  </div>
+</section>
+<div class="ticker" aria-hidden="true"><div class="ticker-track"><span class="t-group"><span class="t-item">Изготовление ключей<i>/</i></span><span class="t-item">Ремонт обуви<i>/</i></span><span class="t-item">Заточка инструмента<i>/</i></span><span class="t-item">Новосибирск<i>/</i></span></span><span class="t-group"><span class="t-item">Изготовление ключей<i>/</i></span><span class="t-item">Ремонт обуви<i>/</i></span><span class="t-item">Заточка инструмента<i>/</i></span><span class="t-item">Новосибирск<i>/</i></span></span></div></div>
+<section id="about"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">01 / О нас</div><div class="sec-title-wrap"><h2>О компании</h2></div></div>
+  <div class="about-grid">
+    <div class="about-copy"><p class="lead reveal">«Компания по изготовлению ключей и ремонту обуви» в Новосибирске. В услугах — изготовление ключей, ремонт обуви и заточка инструмента.</p><p class="reveal" style="--d:70ms">На 2ГИС — 5 из 5 и 34 отзыва клиентов. Сегодня открыты 11:00–19:00. Напишите в WhatsApp — ответим, подскажем по услугам и срокам.</p><div class="tags reveal" style="--d:130ms"><span class="tag">Наличный расчёт</span><span class="tag">Перевод с карты</span><span class="tag">Розница</span></div></div>
+    <aside class="reveal" style="--d:90ms"><dl class="facts"><div class="fact"><dt>Рейтинг 2ГИС</dt><dd><span data-count="5" data-dec="1">5</span> / 5</dd></div><div class="fact"><dt>Отзывы</dt><dd><span data-count="34">34</span></dd></div><div class="fact"><dt>Сегодня</dt><dd>11:00–19:00</dd></div><div class="fact"><dt>Адрес</dt><dd>Пермская улица, 27</dd></div><div class="fact"><dt>Статус</dt><dd>Подтверждённый рейтинг</dd></div></dl><a class="facts-link" href="https://2gis.ru/novosibirsk/firm/70000001082007588"><span>Карточка в 2ГИС</span><span>→</span></a></aside>
+  </div>
+</div></section>
+<section id="services"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">02 / Услуги</div><div class="sec-title-wrap"><h2>Услуги и цены</h2><p class="sec-intro">Услуги из карточки 2ГИС. Цены и запись уточняйте в WhatsApp.</p></div></div>
+  <div class="table"><a class="row reveal" href="https://wa.me/79618714934" style="--d:0ms">
+      <span class="row-n">01</span>
+      <span class="row-main"><span class="row-title">Изготовление ключей</span><span class="row-desc">Дубликаты квартирных и автоключей, чипы и пульты.</span></span>
+      <span class="row-price">по запросу</span>
+      <span class="row-arr">→</span>
+    </a><a class="row reveal" href="https://wa.me/79618714934" style="--d:45ms">
+      <span class="row-n">02</span>
+      <span class="row-main"><span class="row-title">Ремонт обуви</span><span class="row-desc">Набойки, профилактика, замена подошвы и каблука, покраска.</span></span>
+      <span class="row-price">по запросу</span>
+      <span class="row-arr">→</span>
+    </a><a class="row reveal" href="https://wa.me/79618714934" style="--d:90ms">
+      <span class="row-n">03</span>
+      <span class="row-main"><span class="row-title">Заточка инструмента</span><span class="row-desc">Ножи, ножницы и инструмент — аккуратно, без перегрева.</span></span>
+      <span class="row-price">по запросу</span>
+      <span class="row-arr">→</span>
+    </a></div>
+</div></section>
+<section id="gallery"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">03 / Фото</div><div class="sec-title-wrap"><h2>Атмосфера</h2><p class="sec-intro">Фотографии из карточки организации на 2ГИС.</p></div></div>
+  <div class="gallery"><figure class="g reveal" style="--d:0ms"><img src="https://i7.photo.2gis.com/photo-gallery/56ec3c7c-ee6a-4d6a-9387-b7bf15d93c39_656x340.jpg" alt="Компания по изготовлению ключей и ремонту обуви — фото из 2ГИС" loading="eager"><figcaption><span>01</span>Работы</figcaption></figure><figure class="g reveal" style="--d:80ms"><img src="https://i9.photo.2gis.com/photo-gallery/7fc3a962-1f1a-4d55-b0b3-5c2b78d834de_656x340.jpg" alt="Компания по изготовлению ключей и ремонту обуви — фото из 2ГИС" loading="eager"><figcaption><span>02</span>Инструмент</figcaption></figure><figure class="g reveal" style="--d:160ms"><img src="https://i8.photo.2gis.com/photo-gallery/41207623-ac24-48e2-86b3-4e34a9a1ff33_656x340.jpg" alt="Компания по изготовлению ключей и ремонту обуви — фото из 2ГИС" loading="eager"><figcaption><span>03</span>Мастерская</figcaption></figure></div>
+</div></section>
+<section id="reviews"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">04 / Отзывы</div><div class="sec-title-wrap"><h2>Отзывы</h2></div></div>
+  <div class="reviews-grid">
+    <div class="rating-side reveal">
+      <div class="rating-num"><span data-count="5" data-dec="1">5</span><small>/5</small></div><span class="stars">★★★★★</span>
+      <p><span data-count="34">34</span> отзыва на 2ГИС</p>
+      <a href="https://2gis.ru/novosibirsk/firm/70000001082007588">Все отзывы в 2ГИС →</a>
+    </div>
+    <div class="quote-list"><figure class="quote reveal" style="--d:0ms">
+    <div class="quote-meta"><span class="stars">★★★★★</span><span>28 октября</span></div>
+    <blockquote>очень добрый и хороший дядя делает ключи сделал все быстро и четко, ключи от домофона работаю супер!!</blockquote>
+    <figcaption><span class="q-av">Q^</span>QWEZZI ^^<span class="q-src">2ГИС</span></figcaption>
+  </figure><figure class="quote reveal" style="--d:80ms">
+    <div class="quote-meta"><span class="stars">★★★★★</span><span>19 сентября</span></div>
+    <blockquote>Все отлично, делал ключ и все работает отлично, до этого делал в другом месте и он перестал работать, мне дважды переделали и не помогло, а тут мастер все сделал отлично</blockquote>
+    <figcaption><span class="q-av">ЗШ</span>Захар Шичаев<span class="q-src">2ГИС</span></figcaption>
+  </figure></div>
+  </div>
+</div></section>
+<section id="visit"><div class="wrap">
+  <div class="sec-head reveal"><div class="sec-num">05 / Как найти</div><div class="sec-title-wrap"><h2>Как нас найти</h2></div></div>
+  <div class="visit-grid">
+    <div class="reveal">
+      <p class="visit-address">Пермская улица, 27</p>
+      <p class="visit-sub">Сегодня 11:00–19:00 · Новосибирск</p>
+      <div class="hours"><div class="hour "><span>Пн</span><b>11:00–19:00</b></div><div class="hour today"><span>Вт</span><b>11:00–19:00</b></div><div class="hour "><span>Ср</span><b>11:00–19:00</b></div><div class="hour "><span>Чт</span><b>11:00–19:00</b></div><div class="hour "><span>Пт</span><b>11:00–19:00</b></div><div class="hour "><span>Сб</span><b>11:00–17:00</b></div></div>
+      <div class="tags"><span class="tag">Наличный расчёт</span><span class="tag">Перевод с карты</span><span class="tag">Розница</span></div>
+    </div>
+    <div class="reveal" style="--d:100ms"><figure class="map-wrap reveal">
+    <div class="map" role="img" aria-label="Схематичная карта: Пермская улица, 27">
+      <div class="map-lines" aria-hidden="true"></div>
+      <span class="map-road a" aria-hidden="true"></span><span class="map-road b" aria-hidden="true"></span><span class="map-road c" aria-hidden="true"></span>
+      <span class="map-blk d1" aria-hidden="true"></span><span class="map-blk d2" aria-hidden="true"></span><span class="map-blk d3" aria-hidden="true"></span><span class="map-blk d4" aria-hidden="true"></span>
+      <span class="map-pin" aria-hidden="true"></span>
+      <span class="map-label">Ремонт обуви и ключей</span>
+    </div>
+    <figcaption>Схема — для ориентира; маршрут — <a href="https://2gis.ru/novosibirsk/firm/70000001082007588">в 2ГИС</a>.</figcaption>
+  </figure></div>
+  </div>
+</div></section>
+<section id="contacts" class="contact-band"><div class="wrap contact-inner">
+  <div>
+    <div class="contact-label"><span>06 / Контакты</span><span>Новосибирск</span></div>
+    <h2 class="contact-title">Напишите нам</h2>
+    <p class="contact-intro">Ответим в мессенджере, подскажем по услугам и срокам.</p>
+    
+    <div class="contact-actions"><a class="btn btn-ink" href="https://wa.me/79618714934">Написать в WhatsApp<span class="arr">→</span></a><a class="btn btn-ghost" href="https://t.me/+79618714934">Telegram</a><a class="btn btn-ghost" href="https://2gis.ru/novosibirsk/firm/70000001082007588">2ГИС</a></div>
+  </div>
+  <div class="contact-meta">
+    <div class="cm"><span>Адрес</span><b>Пермская улица, 27</b></div>
+    <div class="cm"><span>Часы</span><b>11:00–19:00</b></div>
+    <div class="cm"><span>Связь</span><b>WhatsApp · Telegram</b></div>
+    <div class="cm"><span>2ГИС</span><b><a href="https://2gis.ru/novosibirsk/firm/70000001082007588">Карточка</a></b></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div class="footer-big">Ремонт обуви и ключей</div>
+  <div class="footer-row">
+    <div class="footer-brand"><i></i>Ремонт обуви и ключей</div>
+    <div class="footer-note">Компания по изготовлению ключей и ремонту обуви · Пермская улица, 27 · Новосибирск</div>
+    <div>© 2026 · демо-макет для «Компания по изготовлению ключей и ремонту обуви» · данные и фото — 2ГИС</div>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var doc = document.documentElement;
+  var revealEls = document.querySelectorAll(".reveal");
+  var countEls = document.querySelectorAll("[data-count]");
+  var nav = document.getElementById("nav");
+  var bar = document.getElementById("progress");
+
+  function fmt(v, dec) { return dec ? Number(v).toFixed(dec).replace(".", ",") : String(Math.round(v)); }
+  function runCount(el) {
+    if (el.getAttribute("data-done") === "1") return;
+    el.setAttribute("data-done", "1");
+    var target = parseFloat(el.getAttribute("data-count"));
+    var dec = parseInt(el.getAttribute("data-dec") || "0", 10);
+    if (!isFinite(target)) return;
+    var t0 = null, dur = 1000;
+    function step(t) {
+      if (t0 === null) t0 = t;
+      var p = Math.min(1, (t - t0) / dur);
+      var e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * e, dec);
+      if (p < 1) requestAnimationFrame(step); else el.textContent = fmt(target, dec);
+    }
+    el.textContent = fmt(0, dec);
+    requestAnimationFrame(step);
+  }
+  function showAll() { for (var i = 0; i < revealEls.length; i++) revealEls[i].classList.add("in"); }
+  function finalCounts() {
+    for (var i = 0; i < countEls.length; i++) {
+      var el = countEls[i], t = parseFloat(el.getAttribute("data-count"));
+      var dec = parseInt(el.getAttribute("data-dec") || "0", 10);
+      if (isFinite(t)) el.textContent = fmt(t, dec);
+      el.setAttribute("data-done", "1");
+    }
+  }
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (es) {
+      for (var i = 0; i < es.length; i++) if (es[i].isIntersecting) { es[i].target.classList.add("in"); io.unobserve(es[i].target); }
+    }, { threshold: 0.08, rootMargin: "0px 0px -7% 0px" });
+    for (var i = 0; i < revealEls.length; i++) io.observe(revealEls[i]);
+    var cio = new IntersectionObserver(function (es) {
+      for (var i = 0; i < es.length; i++) if (es[i].isIntersecting) { runCount(es[i].target); cio.unobserve(es[i].target); }
+    }, { threshold: 0.35 });
+    for (var j = 0; j < countEls.length; j++) cio.observe(countEls[j]);
+  } else { showAll(); for (var k = 0; k < countEls.length; k++) runCount(countEls[k]); }
+
+  var ticking = false;
+  function parallax() {
+    var els = document.querySelectorAll("[data-parallax]");
+    if (!els.length) return;
+    var vh = window.innerHeight || doc.clientHeight;
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i], sp = parseFloat(el.getAttribute("data-parallax")) || 0;
+      var r = el.getBoundingClientRect();
+      var off = r.top + r.height / 2 - vh / 2;
+      el.style.transform = "translate3d(0," + (off * sp).toFixed(2) + "px,0)";
+    }
+  }
+  function onScroll() {
+    var y = window.pageYOffset || doc.scrollTop || 0;
+    if (nav) nav.classList.toggle("scrolled", y > 24);
+    if (bar) { var h = (document.body.scrollHeight - window.innerHeight) || 1; bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, y / h)).toFixed(4) + ")"; }
+    parallax();
+    ticking = false;
+  }
+  function req() { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }
+  window.addEventListener("scroll", req, { passive: true });
+  window.addEventListener("resize", req);
+  onScroll();
+
+  window.__settle = function () {
+    document.documentElement.classList.add("settled");
+    showAll();
+    finalCounts();
+    window.scrollTo(0, 0);
+    if (nav) nav.classList.remove("scrolled");
+    if (bar) bar.style.transform = "scaleX(0)";
+  };
+  window.__shotsReady = true;
+})();
+</script>
+</body>
+</html>
