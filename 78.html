@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="ru" class="no-js" data-variant="magazine-warm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Юла — Ателье и ремонт обуви в Новосибирске</title>
+<meta name="description" content="Юла, мастерская: Вещи, которые служат дольше. Рейтинг 3,7 на 2ГИС. Адрес: 2-я Высокогорная улица, 1/1.">
+<meta name="theme-color" content="#f1e8d8">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiNmMWU4ZDgiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxMyIgZmlsbD0iIzZiNGEyZiIvPjwvc3ZnPg==">
+<script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");</script>
+<style>
+  :root{--bg:#f1e8d8;--paper:#f9f2e5;--ink:#2a2118;--muted:#6d5e4f;--line:rgba(42,33,24,.2);--accent:#6b4a2f;--accent-ink:#fbf5ec;--surface:#e6d6c0;
+    --navh:86px;--sans:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;
+    --serif:"Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + 20px)}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.7 var(--serif);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--accent);color:var(--accent-ink)}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 clamp(20px,3.2vw,48px)}
+  .progress{position:fixed;top:0;left:0;width:100%;height:2px;z-index:90;pointer-events:none;transform:scaleX(0);transform-origin:0 50%;background:var(--accent)}
+  .stars{color:var(--accent);letter-spacing:3px}
+  .it{font-style:italic;color:var(--accent)}
+  .masthead{position:sticky;top:0;z-index:80;background:var(--bg);border-bottom:2px solid var(--ink);transition:box-shadow .3s}
+  .masthead.scrolled{box-shadow:0 1px 0 var(--line)}
+  .mast-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0 10px;font:600 10.5px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  .mast-brand{font-family:var(--serif);font-size:clamp(18px,2vw,24px);letter-spacing:-.02em;text-transform:none;color:var(--ink);text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mast-rule{border-top:1px solid var(--line);border-bottom:1px solid var(--line);height:5px}
+  .mast-nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 0 9px;font:600 11px/1 var(--sans);text-transform:uppercase;letter-spacing:.12em}
+  .mast-nav nav{display:flex;gap:22px;flex-wrap:wrap}
+  .mast-nav nav a{color:var(--muted);text-decoration:none;padding-bottom:3px;border-bottom:1px solid transparent}
+  .mast-nav nav a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+  .mast-cta{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);white-space:nowrap}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;font:600 12px/1 var(--sans);text-transform:uppercase;letter-spacing:.1em;text-decoration:none;border:1px solid var(--ink);border-radius:0;transition:background .25s,color .25s,transform .25s,border-color .25s}
+  .btn .arr{transition:transform .25s}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn-accent{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+  .btn-accent:hover{transform:translateY(-1px);filter:brightness(.94)}
+  .btn-outline{background:transparent;color:var(--ink)}
+  .btn-outline:hover{background:var(--ink);color:var(--paper)}
+  .btn-paper{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+  .btn-paper:hover{transform:translateY(-1px);background:#fff}
+  .btn-line{background:transparent;border-color:rgba(255,255,255,.55);color:inherit}
+  .btn-line:hover{background:rgba(255,255,255,.12)}
+  .hero{position:relative}
+  .hero-band{position:relative;height:clamp(420px,58vh,620px);overflow:hidden;background:var(--surface)}
+  .hero-band img{width:100%;height:100%;object-fit:cover}
+  .hero-band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,33,24,.12),rgba(43,33,24,.42));pointer-events:none}
+  .band-cap{position:absolute;right:clamp(20px,3.2vw,48px);bottom:16px;z-index:2;font:600 9.5px/1 var(--sans);letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.85);background:rgba(30,22,16,.5);padding:6px 10px}
+  .hero-band.art{display:grid;place-items:center;background:repeating-linear-gradient(135deg,var(--surface) 0 3px,transparent 3px 22px),var(--paper)}
+  .hero-band.art span{font-family:var(--serif);font-size:clamp(120px,20vw,240px);color:var(--accent);opacity:.4}
+  .sp-fallback{display:grid;place-items:center;background:repeating-linear-gradient(90deg,var(--line) 1px,transparent 1px),var(--surface);background-size:25% 100%;min-height:clamp(240px,38vh,420px)}
+  .sp-fallback span{font-family:var(--serif);font-size:clamp(80px,11vw,150px);color:var(--accent);opacity:.35}
+  .review-empty-mag blockquote{font-style:italic}
+  .review-empty-mag .rem-link{margin:0}
+  .review-empty-mag a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:3px;font:600 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.12em}
+  .hero-inner{position:relative;margin-top:clamp(-150px,-16vh,-90px);padding-bottom:clamp(30px,5vw,56px)}
+  .hero-card{max-width:660px;background:var(--paper);padding:clamp(24px,3.4vw,44px) clamp(22px,3.4vw,44px) clamp(26px,3.4vw,40px);border-top:4px solid var(--accent);box-shadow:0 30px 70px -50px rgba(43,33,24,.6)}
+  .kicker{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font:600 10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.18em;color:var(--accent);margin-bottom:16px}
+  .k-line{width:30px;height:1px;background:var(--accent)}
+  .k-sep{color:var(--line)}
+  .k-issue{margin-left:auto;color:var(--muted);letter-spacing:.14em}
+  h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,5.6vw,80px);line-height:.98;letter-spacing:-.035em;margin:0 0 16px}
+  .tagline{font-family:var(--serif);font-style:italic;font-size:clamp(17px,1.9vw,22px);line-height:1.45;color:var(--muted);margin:0 0 20px;max-width:38ch}
+  .hero-full{font-family:var(--serif);font-style:italic;font-size:13.5px;line-height:1.55;color:var(--muted);margin:-4px 0 16px;max-width:56ch}
+  .hero-rating{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:22px;font-size:12.5px;color:var(--muted)}
+  .hero-rating .stars{font-size:15px;letter-spacing:3px}
+  .hero-rating b{font-family:var(--serif);font-weight:400;font-size:26px;color:var(--ink);line-height:1}
+  .hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
+  .hero-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font:600 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+  .hero-meta .dot{color:var(--accent)}
+  .hero-meta a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+  .contents{display:flex;align-items:center;gap:10px 22px;flex-wrap:wrap;padding:16px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);font:600 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.12em}
+  .contents::before{content:"В номере";color:var(--accent);margin-right:4px}
+  .contents a{color:var(--muted);text-decoration:none;display:inline-flex;gap:6px;align-items:baseline}
+  .contents a:hover{color:var(--ink)}
+  .toc-n{color:var(--accent);font-size:9px;letter-spacing:.06em}
+  section{position:relative}
+  section[id]{scroll-margin-top:calc(var(--navh) + 12px)}
+  .mag-sec{padding:clamp(52px,6.6vw,96px) 0}
+  .mag-head{display:grid;grid-template-columns:96px 1fr;gap:clamp(14px,3vw,36px);align-items:start;border-top:2px solid var(--ink);border-bottom:1px solid var(--line);padding:16px 0 14px;margin-bottom:clamp(28px,4vw,48px)}
+  .mag-num{font-family:var(--serif);font-size:clamp(34px,4.4vw,54px);line-height:.8;color:var(--accent);letter-spacing:-.02em;padding-top:4px}
+  .mag-rubric{font:600 10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.2em;color:var(--muted);margin-bottom:8px}
+  .mag-title{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.6vw,60px);line-height:1;letter-spacing:-.035em;margin:0}
+  .mag-intro{color:var(--muted);font-size:15px;max-width:58ch;margin:12px 0 0;font-style:italic}
+  .about-cols{columns:2;column-gap:clamp(28px,4.6vw,56px);column-rule:1px solid var(--line);font-size:16.5px;line-height:1.75;color:var(--ink)}
+  .about-cols p{margin:0 0 16px;break-inside:avoid-column}
+  .dropcap::first-letter{float:left;font-family:var(--serif);font-size:4.15em;line-height:.76;padding:.04em .1em 0 0;color:var(--accent)}
+  .about-note{display:grid;grid-template-columns:repeat(4,1fr);gap:18px 26px;margin-top:30px;background:var(--surface);border-left:3px solid var(--accent);padding:22px clamp(20px,2.6vw,30px)}
+  .fact{display:flex;flex-direction:column;gap:4px}
+  .fact span{font:600 9.5px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}
+  .fact b{font-family:var(--serif);font-weight:400;font-size:17px;line-height:1.25}
+  .about-note a{grid-column:1/-1;justify-self:start;font:600 10px/1 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:4px}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}
+  .chip{font:600 10px/1.2 var(--sans);text-transform:uppercase;letter-spacing:.06em;border:1px solid var(--line);padding:6px 10px;color:var(--muted);background:var(--paper)}
+  .pull-band{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:clamp(36px,5vw,68px) 0}
+  .pull-inner{position:relative;max-width:900px}
+  .pull-mark{position:absolute;left:-.06em;top:-.32em;font-family:var(--serif);font-size:clamp(80px,10vw,130px);line-height:1;color:rgba(156,68,35,.2);pointer-events:none}
+  .pull-inner blockquote{position:relative;margin:0 0 18px;font-family:var(--serif);font-style:italic;font-size:clamp(22px,3vw,38px);line-height:1.38;letter-spacing:-.02em}
+  .pull-author{font:600 10px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  .mag-list{border-top:1px solid var(--ink)}
+  .mag-row{display:grid;grid-template-columns:46px minmax(0,1fr) minmax(160px,auto);gap:clamp(12px,2.6vw,32px);align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line);transition:background .25s}
+  .mag-row:hover{background:var(--surface)}
+  .mr-n{font:600 10px/1 var(--sans);letter-spacing:.12em;color:var(--accent)}
+  .mag-row h3{font-family:var(--serif);font-weight:400;font-size:clamp(21px,2.6vw,30px);line-height:1.1;letter-spacing:-.02em;margin:0 0 6px;transition:font-style .2s}
+  .mag-row:hover h3{font-style:italic}
+  .mag-row p{color:var(--muted);font-size:14.5px;line-height:1.6;margin:0;max-width:54ch}
+  .mr-tags{margin-top:7px;font:600 9.5px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+  .mr-price{display:flex;align-items:baseline;gap:10px;white-space:nowrap}
+  .mr-price .dots{flex:1 1 auto;border-bottom:1px dotted var(--line);min-width:24px}
+  .mr-price b{font-family:var(--serif);font-weight:400;font-size:clamp(20px,2.2vw,26px);letter-spacing:-.01em}
+  .mr-price small{display:inline;font:600 9px/1 var(--sans);text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin-right:5px}
+  .mag-extras{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding-top:22px}
+  .mag-extras>span{font:600 9.5px/1 var(--sans);text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  .mag-extras .tags{margin-top:0}
+  .mag-menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:clamp(22px,3.4vw,48px)}
+  .mag-menu-col{border-top:1px solid var(--ink);padding-top:12px}
+  .mm-head{display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:10px}
+  .mm-head h3{font-family:var(--serif);font-weight:400;font-size:clamp(24px,2.4vw,30px);letter-spacing:-.02em;margin:0}
+  .mm-head span{font:600 9.5px/1 var(--sans);letter-spacing:.14em;color:var(--accent)}
+  .mag-menu-col ul{list-style:none;margin:0;padding:0}
+  .mag-menu-col li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
+  .mag-menu-col li::after{content:"";flex:1;border-bottom:1px dotted var(--line);align-self:center;order:1;margin:0 8px}
+  .mag-menu-col li{order:0}
+  .mag-menu-col li{display:flex;align-items:baseline}
+  .mag-note{color:var(--muted);font-style:italic;font-size:14px;margin:24px 0 0}
+  .spread{display:grid;grid-template-columns:1fr 1fr;gap:clamp(12px,2vw,22px)}
+  .sp{margin:0}
+  .sp-wide{grid-column:1/-1}
+  .sp img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+  .sp-wide img{height:clamp(300px,44vh,520px)}
+  .sp:not(.sp-wide) img{aspect-ratio:4/3}
+  .sp:hover img{transform:scale(1.03)}
+  .sp figcaption{display:flex;justify-content:space-between;gap:12px;padding-top:8px;font:600 9.5px/1.4 var(--sans);text-transform:uppercase;letter-spacing:.14em;color:var(--muted);border-top:1px solid var(--line);margin-top:8px}
+  .rev-spread{display:grid;grid-template-columns:1.4fr .6fr;gap:clamp(28px,4.6vw,56px);align-items:start}
+  .big-quote{position:relative;margin:0}
+  .bq-mark{position:absolute;left:-.05em;top:-.28em;font-family:var(--serif);font-size:clamp(90px,11vw,150px);line-height:1;color:rgba(156,68,35,.18);pointer-events:none}
+  .big-quote blockquote{position:relative;margin:0 0 22px;font-family:var(--serif);font-style:italic;font-size:clamp(21px,2.9vw,34px);line-height:1.42;letter-spacing:-.02em}
+  .big-quote figcaption{display:flex;align-items:center;gap:12px}
+  .av{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:var(--serif);font-size:16px}
+  .big-quote figcaption>span:last-child{display:flex;flex-direction:column;font:600 11px/1.5 var(--sans);letter-spacing:.04em}
+  .big-quote figcaption em{font-style:normal;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .rating-box{display:flex;flex-direction:column;gap:8px;border:1px solid var(--ink);padding:22px;margin-bottom:20px}
+  .rb-label{font:600 9px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.16em;color:var(--muted)}
+  .rb-num{font-family:var(--serif);font-size:clamp(44px,4.6vw,60px);line-height:.9;letter-spacing:-.04em;display:flex;align-items:flex-start;gap:4px}
+  .rb-num small{font-size:.25em;color:var(--muted);margin-top:.4em}
+  .rating-box .stars{font-size:15px;letter-spacing:3px}
+  .rb-count{font-size:12px;color:var(--muted)}
+  .rating-box a{font:600 9.5px/1 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent);padding-bottom:4px;align-self:flex-start;margin-top:6px}
+  .small-quote{margin:0;border-top:1px solid var(--line);padding-top:16px}
+  .sq-head{display:flex;justify-content:space-between;gap:10px;margin-bottom:10px;font:600 9px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .small-quote blockquote{margin:0 0 10px;font-family:var(--serif);font-size:16px;line-height:1.55;font-style:italic}
+  .small-quote figcaption{font:600 9.5px/1.4 var(--sans);letter-spacing:.06em;color:var(--muted)}
+  .small-quote em{font-style:normal}
+  .visit-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(30px,4.6vw,64px);align-items:start}
+  .visit-address{font-family:var(--serif);font-size:clamp(30px,3.9vw,50px);line-height:.98;letter-spacing:-.035em;margin:0 0 12px}
+  .visit-sub{font-style:italic;color:var(--muted);font-size:14px;margin:0 0 24px}
+  .hours{border-top:1px solid var(--ink)}
+  .hour{display:flex;align-items:baseline;gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px;color:var(--muted)}
+  .hour .dots{flex:1;border-bottom:1px dotted var(--line)}
+  .hour b{font-family:var(--serif);font-weight:400;color:var(--ink);font-size:15px;font-variant-numeric:tabular-nums}
+  .hour.today{color:var(--ink)}
+  .hour.today span::before{content:"●";color:var(--accent);font-size:7px;margin-right:7px;vertical-align:middle}
+  .mag-map{margin:0}
+  .map{position:relative;aspect-ratio:1.12;border:1px solid var(--ink);background:var(--surface);overflow:hidden}
+  .map-grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:12.5% 12.5%;opacity:.7}
+  .map-road{position:absolute;background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .map-road.a{width:150%;height:16px;left:-25%;top:37%;transform:rotate(-8deg)}
+  .map-road.b{width:150%;height:9px;left:-25%;top:72%;transform:rotate(6deg)}
+  .map-road.c{width:70%;height:12px;left:17%;top:-8%;transform:rotate(72deg)}
+  .map-blk{position:absolute;background:var(--paper);border:1px solid var(--line)}
+  .map-blk.a{width:23%;height:17%;left:9%;top:15%;transform:rotate(-3deg)}
+  .map-blk.b{width:15%;height:22%;left:19%;top:49%;transform:rotate(3deg)}
+  .map-blk.c{width:19%;height:12%;right:12%;top:57%;transform:rotate(-2deg)}
+  .map-pin{position:absolute;left:62%;top:46%;width:16px;height:16px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 7px rgba(156,68,35,.16);z-index:2}
+  .map-label{position:absolute;left:12px;bottom:12px;font:600 9.5px/1 var(--sans);text-transform:uppercase;letter-spacing:.12em;background:var(--paper);border:1px solid var(--line);padding:5px 9px}
+  .map-link{position:absolute;right:12px;top:12px;font:600 9.5px/1 var(--sans);text-transform:uppercase;letter-spacing:.12em;color:var(--accent);text-decoration:none;background:var(--paper);border:1px solid var(--line);padding:6px 10px}
+  .mag-map figcaption{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font:600 9.5px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+  .mag-map figcaption a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent)}
+  .contact-band{background:var(--accent);color:var(--accent-ink);padding:clamp(44px,6vw,80px) 0}
+  .contact-kicker{font:600 10px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.2em;color:rgba(255,255,255,.7);margin-bottom:14px;display:flex;gap:12px;align-items:center}
+  .contact-title{font-family:var(--serif);font-weight:400;font-size:clamp(36px,5.4vw,72px);line-height:.98;letter-spacing:-.04em;margin:0 0 14px}
+  .contact-intro{font-size:16px;line-height:1.6;color:rgba(255,255,255,.82);max-width:48ch;margin:0 0 20px;font-style:italic}
+  .big-phone{display:inline-block;font-family:var(--serif);font-size:clamp(26px,4.3vw,56px);letter-spacing:-.03em;text-decoration:none;color:var(--accent-ink);line-height:1.05;margin:0 0 22px;border-bottom:2px solid rgba(255,255,255,.5);padding-bottom:4px}
+  .big-phone:hover{border-bottom-color:#fff}
+  .contact-actions{display:flex;gap:10px;flex-wrap:wrap}
+  .contact-meta{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px;padding-top:20px;border-top:1px solid rgba(255,255,255,.4)}
+  .cm{display:flex;flex-direction:column;gap:4px}
+  .cm span{font:600 9px/1.3 var(--sans);text-transform:uppercase;letter-spacing:.16em;color:rgba(255,255,255,.65)}
+  .cm b{font-family:var(--serif);font-weight:400;font-size:15px;line-height:1.4}
+  .cm a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.45)}
+  footer{padding:clamp(36px,5vw,60px) 0 30px;border-top:1px solid var(--line)}
+  .foot-name{font-family:var(--serif);font-size:clamp(40px,10vw,140px);line-height:.84;letter-spacing:-.05em;color:var(--ink);opacity:.16;margin:0 0 30px;user-select:none;overflow-wrap:break-word}
+  .colophon{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:24px;border-top:2px solid var(--ink);padding-top:18px;font-size:12px;line-height:1.6;color:var(--muted)}
+  .colophon b{display:block;font:600 9px/1 var(--sans);text-transform:uppercase;letter-spacing:.16em;color:var(--ink);margin-bottom:7px}
+  .colophon a{text-decoration:none;border-bottom:1px solid transparent}
+  .colophon a:hover{border-bottom-color:var(--accent);color:var(--ink)}
+  .colophon .copy{grid-column:1/-1;padding-top:12px;border-top:1px solid var(--line);font-size:10.5px}
+  .js .reveal{opacity:0;transform:translateY(20px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0ms)}
+  .js .reveal.in{opacity:1;transform:none}
+  .rise{animation:rise .75s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--d,0s)}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  .settled .reveal,.settled .rise{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+  @media(max-width:1080px){.rev-spread{grid-template-columns:1fr;gap:34px}.visit-grid{grid-template-columns:1fr;gap:34px}.about-note{grid-template-columns:repeat(2,1fr)}.colophon{grid-template-columns:1fr 1fr}.mag-head{grid-template-columns:64px 1fr}}
+  @media(max-width:860px){:root{--navh:64px}.mast-nav{display:none}.mast-top{justify-content:center;padding:12px 0 9px}.mast-top span{display:none}.mast-brand{font-size:19px;max-width:88%}.mast-rule{height:4px}.hero-band{height:clamp(300px,44vh,420px)}.hero-inner{margin-top:-110px}.hero-card{padding:22px 20px 26px}.about-cols{columns:1}.rev-spread{grid-template-columns:1fr}.contact-meta{grid-template-columns:1fr 1fr}.colophon{grid-template-columns:1fr}.mag-row{grid-template-columns:30px minmax(0,1fr);grid-template-areas:"n main" ". price"}.mr-n{grid-area:n}.mr-main{grid-area:main}.mr-price{grid-area:price;margin-top:8px}.spread{grid-template-columns:1fr}.sp-wide{grid-column:auto}.sp-wide img{height:clamp(260px,40vh,420px)}.sp:not(.sp-wide) img{aspect-ratio:4/3}.mag-menu{grid-template-columns:1fr}.about-note{grid-template-columns:1fr 1fr}.hero-cta .btn{flex:1 1 auto}}
+  @media(max-width:560px){.wrap{padding:0 18px}.hero-inner{margin-top:-84px}.hero-card{max-width:none}.hero-cta{flex-direction:column;align-items:stretch}.hero-cta .btn{justify-content:center}.contact-actions{flex-direction:column;align-items:stretch}.contact-actions .btn{justify-content:center}.contact-meta{grid-template-columns:1fr}.about-note{grid-template-columns:1fr}.mag-head{grid-template-columns:50px 1fr}.k-issue{display:none}.contents{gap:8px 16px}.pull-inner blockquote{font-size:20px}.foot-name{margin-bottom:22px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.js .reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="masthead" id="nav">
+  <div class="wrap mast-top"><span>Новосибирск · 25 ноября 2026</span><a class="mast-brand" href="#top">Юла</a><span>№ 01 / 2026</span></div>
+  <div class="wrap mast-rule" aria-hidden="true"></div>
+  <div class="wrap mast-nav"><nav aria-label="Разделы"><a href="#about">О нас</a><a href="#services">Услуги</a><a href="#gallery">Фото</a><a href="#reviews">Отзывы</a><a href="#visit">Как найти</a><a href="#contacts">Контакты</a></nav><a class="mast-cta" href="https://wa.me/79134559905">Написать →</a></div>
+</header>
+<main id="top">
+<section class="hero"><div class="hero-band"><img src="https://i2.photo.2gis.com/images/branch/0/30258560096345017_223a_656x340.jpg" alt="Юла, мастерская — фото из 2ГИС" loading="eager"><span class="band-cap">Фото · 2ГИС</span></div><div class="hero-inner">
+    <div class="hero-card rise">
+      <div class="kicker"><span class="k-line"></span><span>ателье и ремонт обуви</span><span class="k-sep">·</span><span>Новосибирск</span><span class="k-issue">№ 01 / 2026</span></div>
+      <h1 class="rise" style="--d:.08s">Юла<span class="it">.</span></h1>
+      
+      <p class="tagline rise" style="--d:.14s">Вещи, которые служат дольше.</p>
+      <div class="hero-rating rise" style="--d:.18s">
+        <span class="stars">★★★★☆</span><b><span data-count="3.7" data-dec="1">3,7</span></b>
+        <span class="rev-cnt">— <span data-count="16">16</span> отзывов на 2ГИС</span>
+      </div>
+      <div class="hero-cta rise" style="--d:.22s">
+        <a class="btn btn-accent" href="https://wa.me/79134559905">Написать в WhatsApp<span class="arr">→</span></a>
+        <a class="btn btn-outline" href="https://t.me/+79134559905">Telegram</a>
+      </div>
+      <div class="hero-meta rise" style="--d:.26s">
+        <span>2-я Высокогорная улица, 1/1</span>
+        <span class="dot">·</span><span>Сегодня 11:00–20:00</span>
+        <a href="https://2gis.ru/novosibirsk/firm/70000001044491341">2ГИС →</a>
+      </div>
+    </div>
+  </div></section>
+<div class="wrap contents"><a href="#about"><span class="toc-n">01</span>О нас</a><a href="#services"><span class="toc-n">02</span>Услуги</a><a href="#gallery"><span class="toc-n">03</span>Фото</a><a href="#reviews"><span class="toc-n">04</span>Отзывы</a><a href="#visit"><span class="toc-n">05</span>Как найти</a><a href="#contacts"><span class="toc-n">06</span>Контакты</a></div>
+
+<section id="about" class="mag-sec"><div class="wrap">
+  <div class="mag-head reveal"><div class="mag-num">01</div><div><div class="mag-rubric">ателье и ремонт обуви · редакция</div><h2 class="mag-title">О компании</h2></div></div>
+  <div class="about-cols reveal"><p class="dropcap">«Юла» — мастерская в Новосибирске. В услугах — ателье и ремонт одежды, ремонт обуви и консультация.</p><p>На 2ГИС — 3,7 из 5 и 16 отзывов клиентов. Сегодня открыты 11:00–20:00. Напишите в WhatsApp — ответим, подскажем по услугам и срокам.</p></div>
+  <div class="about-note reveal" style="--d:90ms"><div class="fact"><span>Рейтинг 2ГИС</span><b><span data-count="3.7" data-dec="1">3,7</span> / 5</b></div><div class="fact"><span>Отзывы</span><b><span data-count="16">16</span></b></div><div class="fact"><span>Сегодня</span><b>11:00–20:00</b></div><div class="fact"><span>Адрес</span><b>2-я Высокогорная улица, 1/1</b></div><a href="https://2gis.ru/novosibirsk/firm/70000001044491341">Карточка в 2ГИС →</a></div>
+  <div class="tags reveal" style="--d:120ms"><span class="chip">Выезд на дом</span><span class="chip">Наличный расчёт</span><span class="chip">Оплата через банк</span><span class="chip">Перевод с карты</span></div>
+</div></section>
+
+<section class="pull-band"><div class="wrap"><div class="pull-inner reveal"><span class="pull-mark" aria-hidden="true">“</span><blockquote>Помогаем бизнесу усиливать репутацию в Яндекс и 2ГИС. 2ГИС — 50 отзывов: 3 700 ₽ Яндекс — 50 отзывов: 4 400 ₽ 100 отзывов — от 6 000 ₽ Понятные условия Постепенная работа Сопровождение до результата Посмотрите, как это работает: наш сайт fin-up.online Или просто напишите нам — подскажем, с чего лучше начать.</blockquote><div class="pull-author">— наташа Беденко, отзыв на 2ГИС</div></div></div></section>
+
+<section id="services" class="mag-sec"><div class="wrap">
+  <div class="mag-head reveal"><div class="mag-num">02</div><div><div class="mag-rubric">прайс · 2ГИС</div><h2 class="mag-title">Услуги и цены</h2><p class="mag-intro">Услуги — из карточки организации на 2ГИС; цены и запись уточняйте в WhatsApp.</p></div></div>
+  <div class="mag-list"><div class="mag-row reveal" style="--d:0ms">
+      <span class="mr-n">01</span>
+      <div class="mr-main"><h3>Ателье и ремонт одежды</h3><p>Подгонка по фигуре, пошив, замена молний и мелкий ремонт.</p></div>
+      <div class="mr-price"><span class="dots" aria-hidden="true"></span><b>по запросу</b></div>
+    </div><div class="mag-row reveal" style="--d:45ms">
+      <span class="mr-n">02</span>
+      <div class="mr-main"><h3>Ремонт обуви</h3><p>Набойки, профилактика, замена подошвы и каблука, покраска.</p></div>
+      <div class="mr-price"><span class="dots" aria-hidden="true"></span><b>по запросу</b></div>
+    </div><div class="mag-row reveal" style="--d:90ms">
+      <span class="mr-n">03</span>
+      <div class="mr-main"><h3>Консультация</h3><p>Расскажем об услугах и сориентируем по стоимости.</p></div>
+      <div class="mr-price"><span class="dots" aria-hidden="true"></span><b>по запросу</b></div>
+    </div></div>
+    
+</div></section>
+
+<section id="gallery" class="mag-sec" style="padding-top:0"><div class="wrap">
+  <div class="mag-head reveal"><div class="mag-num">03</div><div><div class="mag-rubric">фото · 2ГИС</div><h2 class="mag-title">Атмосфера</h2></div></div>
+  <div class="spread"><figure class="sp sp-wide reveal" style="--d:0ms"><img src="https://i2.photo.2gis.com/images/branch/0/30258560096345017_223a_656x340.jpg" alt="Юла, мастерская — фото из 2ГИС" loading="eager"><figcaption><span>01</span>Фото из карточки 2ГИС</figcaption></figure><figure class="sp  reveal" style="--d:80ms"><img src="https://i2.photo.2gis.com/images/branch/0/30258560096345011_e975_656x340.jpg" alt="Юла, мастерская — фото из 2ГИС" loading="eager"><figcaption><span>02</span>Фото из карточки 2ГИС</figcaption></figure><figure class="sp  reveal" style="--d:160ms"><img src="https://i2.photo.2gis.com/images/branch/0/30258560096345008_d901_656x340.jpg" alt="Юла, мастерская — фото из 2ГИС" loading="eager"><figcaption><span>03</span>Фото из карточки 2ГИС</figcaption></figure></div>
+</div></section>
+
+<section id="reviews" class="mag-sec"><div class="wrap">
+  <div class="mag-head reveal"><div class="mag-num">04</div><div><div class="mag-rubric">отзывы · 2ГИС</div><h2 class="mag-title">Отзывы</h2></div></div>
+  <div class="rev-spread"><figure class="big-quote reveal"><span class="bq-mark" aria-hidden="true">“</span><blockquote>Помогаем бизнесу усиливать репутацию в Яндекс и 2ГИС. 2ГИС — 50 отзывов: 3 700 ₽ Яндекс — 50 отзывов: 4 400 ₽ 100 отзывов — от 6 000 ₽ Понятные условия Постепенная работа Сопровождение до результата Посмотрите, как это работает: наш сайт fin-up.online Или просто напишите нам — подскажем, с чего лучше начать. Telegram: указан на нашем сайте. WhatsApp: +7 702 356 40 37</blockquote><figcaption><span class="av">НБ</span><span>наташа Беденко<em>24 ноября · 2ГИС</em></span></figcaption></figure><div class="rating-box reveal"><span class="rb-label">Оценка гостей</span><span class="rb-num"><span data-count="3.7" data-dec="1">3,7</span><small>/5</small></span><span class="stars">★★★★☆</span><span class="rb-count"><span data-count="16">16</span> отзывов на 2ГИС</span><a href="https://2gis.ru/novosibirsk/firm/70000001044491341">Все отзывы →</a></div></div>
+</div></section>
+
+<section id="visit" class="mag-sec"><div class="wrap">
+  <div class="mag-head reveal"><div class="mag-num">05</div><div><div class="mag-rubric">адрес · часы</div><h2 class="mag-title">Как нас найти</h2></div></div>
+  <div class="visit-grid">
+    <div class="reveal">
+      <p class="visit-address">2-я Высокогорная улица, 1/1</p>
+      <p class="visit-sub">Сегодня открыты 11:00–20:00 · Новосибирск</p>
+      <div class="hours"><div class="hour "><span>Пн</span><i class="dots" aria-hidden="true"></i><b>11:00–20:00</b></div><div class="hour "><span>Вт</span><i class="dots" aria-hidden="true"></i><b>11:00–20:00</b></div><div class="hour today"><span>Ср</span><i class="dots" aria-hidden="true"></i><b>11:00–20:00</b></div><div class="hour "><span>Чт</span><i class="dots" aria-hidden="true"></i><b>11:00–20:00</b></div><div class="hour "><span>Пт</span><i class="dots" aria-hidden="true"></i><b>11:00–20:00</b></div></div>
+    </div>
+    <div class="reveal" style="--d:90ms"><figure class="mag-map reveal">
+    <div class="map" role="img" aria-label="Схематичная карта: 2-я Высокогорная улица, 1/1">
+      <div class="map-grid" aria-hidden="true"></div>
+      <span class="map-road a" aria-hidden="true"></span><span class="map-road b" aria-hidden="true"></span><span class="map-road c" aria-hidden="true"></span>
+      <span class="map-blk a" aria-hidden="true"></span><span class="map-blk b" aria-hidden="true"></span><span class="map-blk c" aria-hidden="true"></span>
+      <span class="map-pin" aria-hidden="true"></span>
+      <span class="map-label">Юла</span>
+      <a class="map-link" href="https://2gis.ru/novosibirsk/firm/70000001044491341">2ГИС ↗</a>
+    </div>
+    <figcaption><span>Схема для ориентира.</span><a href="https://2gis.ru/novosibirsk/firm/70000001044491341">Точный маршрут в 2ГИС ↗</a></figcaption>
+  </figure></div>
+  </div>
+</div></section>
+
+<section id="contacts" class="contact-band"><div class="wrap">
+  <div class="contact-kicker"><span>06 · контакты</span><span>Новосибирск</span></div>
+  <h2 class="contact-title">Напишите нам</h2>
+  <p class="contact-intro">Ответим в мессенджере, подскажем по услугам и срокам.</p>
+  <a class="big-phone" href="tel:+79134559905">+7 913 455-99-05</a>
+  <div class="contact-actions"><a class="btn btn-paper" href="https://wa.me/79134559905">Написать в WhatsApp<span class="arr">→</span></a><a class="btn btn-line" href="https://t.me/+79134559905">Telegram</a><a class="btn btn-line" href="tel:+79134559905">Позвонить</a><a class="btn btn-line" href="https://2gis.ru/novosibirsk/firm/70000001044491341">2ГИС</a></div>
+  <div class="contact-meta">
+    <div class="cm"><span>Адрес</span><b>2-я Высокогорная улица, 1/1</b></div>
+    <div class="cm"><span>Часы</span><b>11:00–20:00</b></div>
+    <div class="cm"><span>Связь</span><b>WhatsApp · Telegram · Телефон</b></div>
+    <div class="cm"><span>2ГИС</span><b><a href="https://2gis.ru/novosibirsk/firm/70000001044491341">Карточка организации</a></b></div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div class="foot-name">Юла</div>
+  <div class="colophon">
+    <div><b>О проекте</b>Юла, мастерская · 2-я Высокогорная улица, 1/1 · Новосибирск</div>
+    <div><b>Связь</b><a href="tel:+79134559905">+7 913 455-99-05</a><br><a href="https://wa.me/79134559905">WhatsApp</a><br><a href="https://t.me/+79134559905">Telegram</a></div>
+    <div><b>Редакция</b>Демо-макет · 2026<br>Данные и фото — 2ГИС</div>
+    <div class="copy">© 2026 · демо-сайт для «Юла, мастерская» · весь контент — из открытой карточки организации на 2ГИС</div>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var doc = document.documentElement;
+  var revealEls = document.querySelectorAll(".reveal");
+  var countEls = document.querySelectorAll("[data-count]");
+  var nav = document.getElementById("nav");
+  var bar = document.getElementById("progress");
+
+  function fmt(v, dec) { return dec ? Number(v).toFixed(dec).replace(".", ",") : String(Math.round(v)); }
+  function runCount(el) {
+    if (el.getAttribute("data-done") === "1") return;
+    el.setAttribute("data-done", "1");
+    var target = parseFloat(el.getAttribute("data-count"));
+    var dec = parseInt(el.getAttribute("data-dec") || "0", 10);
+    if (!isFinite(target)) return;
+    var t0 = null, dur = 1000;
+    function step(t) {
+      if (t0 === null) t0 = t;
+      var p = Math.min(1, (t - t0) / dur);
+      var e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * e, dec);
+      if (p < 1) requestAnimationFrame(step); else el.textContent = fmt(target, dec);
+    }
+    el.textContent = fmt(0, dec);
+    requestAnimationFrame(step);
+  }
+  function showAll() { for (var i = 0; i < revealEls.length; i++) revealEls[i].classList.add("in"); }
+  function finalCounts() {
+    for (var i = 0; i < countEls.length; i++) {
+      var el = countEls[i], t = parseFloat(el.getAttribute("data-count"));
+      var dec = parseInt(el.getAttribute("data-dec") || "0", 10);
+      if (isFinite(t)) el.textContent = fmt(t, dec);
+      el.setAttribute("data-done", "1");
+    }
+  }
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (es) {
+      for (var i = 0; i < es.length; i++) if (es[i].isIntersecting) { es[i].target.classList.add("in"); io.unobserve(es[i].target); }
+    }, { threshold: 0.08, rootMargin: "0px 0px -7% 0px" });
+    for (var i = 0; i < revealEls.length; i++) io.observe(revealEls[i]);
+    var cio = new IntersectionObserver(function (es) {
+      for (var i = 0; i < es.length; i++) if (es[i].isIntersecting) { runCount(es[i].target); cio.unobserve(es[i].target); }
+    }, { threshold: 0.35 });
+    for (var j = 0; j < countEls.length; j++) cio.observe(countEls[j]);
+  } else { showAll(); for (var k = 0; k < countEls.length; k++) runCount(countEls[k]); }
+
+  var ticking = false;
+  function parallax() {
+    var els = document.querySelectorAll("[data-parallax]");
+    if (!els.length) return;
+    var vh = window.innerHeight || doc.clientHeight;
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i], sp = parseFloat(el.getAttribute("data-parallax")) || 0;
+      var r = el.getBoundingClientRect();
+      var off = r.top + r.height / 2 - vh / 2;
+      el.style.transform = "translate3d(0," + (off * sp).toFixed(2) + "px,0)";
+    }
+  }
+  function onScroll() {
+    var y = window.pageYOffset || doc.scrollTop || 0;
+    if (nav) nav.classList.toggle("scrolled", y > 24);
+    if (bar) { var h = (document.body.scrollHeight - window.innerHeight) || 1; bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, y / h)).toFixed(4) + ")"; }
+    parallax();
+    ticking = false;
+  }
+  function req() { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }
+  window.addEventListener("scroll", req, { passive: true });
+  window.addEventListener("resize", req);
+  onScroll();
+
+  window.__settle = function () {
+    document.documentElement.classList.add("settled");
+    showAll();
+    finalCounts();
+    window.scrollTo(0, 0);
+    if (nav) nav.classList.remove("scrolled");
+    if (bar) bar.style.transform = "scaleX(0)";
+  };
+  window.__shotsReady = true;
+})();
+</script>
+</body>
+</html>
