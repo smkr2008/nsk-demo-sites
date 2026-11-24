@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="ru" class="no-js" data-variant="brutalist-bold">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>НСКБилд — Строительство и ремонт в Новосибирске</title>
+<meta name="description" content="НСКБилд, строительная компания: Ремонт, после которого не переделывают.. Адрес: улица Высоцкого, 33.">
+<meta name="theme-color" content="#f2f0e9">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiNmMmYwZTkiLz48Y2lyY2xlIGN4PSIzMiIgY3k9IjMyIiByPSIxMyIgZmlsbD0iI2ZmNGQwMCIvPjwvc3ZnPg==">
+<script>document.documentElement.classList.remove("no-js");document.documentElement.classList.add("js");</script>
+<style>
+  :root{--paper:#f2f0e9;--paper2:#e7e4da;--ink:#101010;--muted:#4e4d48;--acid:#ff4d00;--acid-ink:#fdf7f2;
+    --navh:70px;--sans:"Segoe UI",system-ui,-apple-system,"Helvetica Neue",Arial,sans-serif;--mono:"Cascadia Mono",Consolas,"Courier New",monospace}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--navh) + 24px)}
+  body{margin:0;background:var(--paper);color:var(--ink);font:16.5px/1.6 var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+  ::selection{background:var(--acid);color:var(--acid-ink)}
+  img{display:block;max-width:100%}
+  a{color:inherit}
+  .wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 clamp(18px,3vw,44px)}
+  .progress{position:fixed;top:0;left:0;width:100%;height:4px;z-index:90;pointer-events:none;transform:scaleX(0);transform-origin:0 50%;background:var(--acid);border-bottom:0}
+  .nav{position:sticky;top:0;z-index:80;background:var(--ink);color:var(--paper);border-bottom:4px solid var(--acid)}
+  .nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;height:var(--navh)}
+  .brand{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font:800 17px/1 var(--sans);text-transform:uppercase;letter-spacing:-.02em;color:var(--paper);white-space:nowrap;max-width:44%;overflow:hidden;text-overflow:ellipsis}
+  .brand i{width:14px;height:14px;background:var(--acid);display:inline-block;flex:0 0 auto;border:2px solid var(--paper)}
+  .nav-links{display:flex;gap:22px;font:700 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em}
+  .nav-links a{color:var(--paper);text-decoration:none;padding:5px 0;border-bottom:2px solid transparent}
+  .nav-links a:hover{border-bottom-color:var(--acid);color:var(--acid)}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--acid);background:var(--acid);color:var(--acid-ink);padding:9px 14px;text-decoration:none;font:800 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;box-shadow:3px 3px 0 var(--paper);white-space:nowrap}
+  .nav-cta:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--paper)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 24px;font:800 12.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:3px solid var(--ink);background:var(--paper);color:var(--ink);border-radius:0;box-shadow:6px 6px 0 var(--ink);transition:transform .18s,box-shadow .18s,background .18s,color .18s;white-space:nowrap;cursor:pointer}
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 var(--ink)}
+  .btn .arr{transition:transform .25s}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn-primary{background:var(--acid);color:var(--acid-ink)}
+  .btn-acid{background:var(--acid);color:var(--acid-ink);border-color:var(--ink);box-shadow:6px 6px 0 var(--ink)}
+  .btn-paper{background:var(--paper);color:var(--ink);border-color:var(--paper);box-shadow:6px 6px 0 var(--acid)}
+  .btn-paper:hover{box-shadow:9px 9px 0 var(--acid)}
+  .hero{position:relative;background:var(--paper);border-bottom:4px solid var(--ink);padding:clamp(26px,4vh,52px) 0 clamp(26px,4vh,52px)}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(28px,4.6vw,60px);align-items:center}
+  .kicker{display:flex;align-items:center;gap:14px;flex-wrap:wrap;font:700 10.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.14em;margin-bottom:20px}
+  .kicker-tag{background:var(--ink);color:var(--paper);padding:7px 10px}
+  h1{font:900 var(--fs)/.84 var(--sans);text-transform:uppercase;letter-spacing:-.045em;margin:0 0 22px;text-wrap:balance}
+  .hl{display:inline-block;background:var(--acid);color:var(--acid-ink);padding:0 .06em;transform:rotate(-1.2deg);box-shadow:6px 6px 0 var(--ink)}
+  .sq{display:inline-block;width:.15em;height:.15em;background:var(--acid);margin-left:.05em;vertical-align:baseline}
+  .tagline{font-size:clamp(17px,1.8vw,21px);line-height:1.45;font-weight:600;max-width:36ch;margin:0 0 26px}
+  .hero-full{font:700 10.5px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:-2px 0 18px;max-width:56ch}
+  .hero-nums{display:flex;flex-wrap:wrap;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);margin:0 0 26px}
+  .num{padding:14px 22px 12px 0;margin-right:22px;border-right:3px solid var(--ink)}
+  .num:last-child{border-right:0;margin-right:0;padding-right:0}
+  .num b{display:block;font:900 clamp(28px,3.2vw,46px)/.95 var(--sans);letter-spacing:-.04em}
+  .num b.small{font-size:clamp(20px,2.2vw,28px)}
+  .num span{display:block;margin-top:5px;font:700 9.5px/1.3 var(--mono);letter-spacing:.1em;text-transform:uppercase}
+  .hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:24px}
+  .hero-meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font:700 10.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .hero-meta .sep{color:var(--acid)}
+  .hero-meta a{color:var(--ink);text-decoration:none;border-bottom:2px solid var(--acid)}
+  .hero-media{position:relative;padding:0 0 46px}
+  .photo-frame{position:relative;overflow:hidden;border:4px solid var(--ink);background:var(--paper2);box-shadow:12px 12px 0 var(--acid)}
+  .pf-main{width:100%;aspect-ratio:4/5}
+  .pf-main img,.pf-small img{width:100%;height:100%;object-fit:cover}
+  .pf-small{position:absolute;left:-6%;bottom:0;width:42%;aspect-ratio:3/4;transform:rotate(-6deg);box-shadow:10px 10px 0 var(--ink);border-color:var(--ink)}
+  .pf-small img{transform:scale(1.03)}
+  .pf-main.art{display:grid;place-items:center;background:repeating-linear-gradient(45deg,var(--paper2) 0 18px,var(--acid) 18px 36px)}
+  .pf-main.art span{font:900 150px/1 var(--sans);color:var(--ink);background:var(--paper);padding:8px 20px;border:4px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+  .sticker{position:absolute;right:-2%;top:3%;z-index:3;background:var(--acid);color:var(--acid-ink);border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);transform:rotate(5deg);padding:10px 14px;font:800 11.5px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.05em;max-width:70%}
+  .ticker{background:var(--ink);color:var(--acid);border-bottom:4px solid var(--ink);overflow:hidden;padding:12px 0}
+  .ticker-track{display:flex;width:max-content;animation:tick 38s linear infinite}
+  .t-item{display:inline-flex;align-items:center;gap:22px;padding:0 22px;white-space:nowrap;font:800 13px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em}
+  .t-item i{font-style:normal;color:var(--paper)}
+  @keyframes tick{to{transform:translateX(-50%)}}
+  section{position:relative;padding:clamp(58px,7vw,104px) 0;border-bottom:4px solid var(--ink)}
+  section[id]{scroll-margin-top:calc(var(--navh) + 12px)}
+  .band-paper2{background:var(--paper2)}
+  .band-ink{background:var(--ink);color:var(--paper);border-top:4px solid var(--ink)}
+  .band-acid{background:var(--acid);color:var(--acid-ink);border-top:4px solid var(--ink);border-bottom:4px solid var(--ink)}
+  .sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;padding-bottom:16px;border-bottom:4px solid currentColor;margin-bottom:clamp(28px,4vw,48px)}
+  .sec-label{display:inline-block;background:var(--ink);color:var(--paper);padding:8px 12px;font:800 10.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.1em}
+  .band-ink .sec-label{background:var(--acid);color:var(--acid-ink)}
+  .band-acid .sec-label{background:var(--acid-ink);color:var(--acid)}
+  h2{font:900 clamp(34px,5.2vw,72px)/.9 var(--sans);text-transform:uppercase;letter-spacing:-.04em;margin:12px 0 0}
+  .sec-intro{max-width:54ch;font-size:15px;margin:12px 0 0;color:var(--muted)}
+  .band-ink .sec-intro{color:rgba(242,240,233,.7)}
+  .band-acid .sec-intro{color:rgba(16,16,16,.78)}
+  .price-sticker{display:inline-flex;flex-direction:column;gap:4px;border:3px solid var(--ink);background:var(--paper);color:var(--ink);padding:12px 16px;box-shadow:6px 6px 0 var(--ink);font:800 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.04em}
+  .price-sticker b{font:900 24px/1 var(--sans);letter-spacing:-.03em}
+  .about-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(26px,4.6vw,64px);align-items:start}
+  .lead{font-size:clamp(20px,2.4vw,30px);line-height:1.34;font-weight:700;letter-spacing:-.02em;margin:0 0 20px;white-space:pre-line}
+  .about-copy p{color:var(--muted);max-width:58ch;margin:0 0 18px;font-size:15.5px}
+  .tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}
+  .tag{border:2px solid var(--ink);background:var(--paper);padding:6px 9px;font:700 10.5px/1.2 var(--mono);text-transform:uppercase;letter-spacing:.03em;transition:background .2s,color .2s}
+  .tag:hover{background:var(--acid);color:var(--acid-ink)}
+  .facts{border:3px solid var(--ink);background:var(--paper);box-shadow:10px 10px 0 var(--ink)}
+  .fact{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:14px 16px;border-bottom:2px solid var(--ink);font:700 12px/1.35 var(--mono)}
+  .fact:last-child{border-bottom:0}
+  .fact span{text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-size:10px}
+  .fact b{text-align:right;font-size:13px}
+  .facts-link{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 16px;background:var(--acid);color:var(--acid-ink);border-top:3px solid var(--ink);text-decoration:none;font:800 11px/1 var(--mono);text-transform:uppercase;letter-spacing:.04em}
+  .brows{border-top:3px solid var(--ink)}
+  .brow{display:grid;grid-template-columns:56px minmax(0,1fr) auto;gap:clamp(12px,2.6vw,32px);align-items:start;padding:20px 0;border-bottom:3px solid var(--ink);transition:background .18s,padding .18s}
+  .brow:hover{background:var(--acid);padding-left:14px;padding-right:14px}
+  .brow-n{font:800 12px/1 var(--mono);padding-top:6px}
+  .brow h3{font:900 clamp(20px,2.5vw,32px)/1.02 var(--sans);text-transform:uppercase;letter-spacing:-.03em;margin:0 0 7px}
+  .brow p{color:var(--muted);margin:0;font-size:14px;max-width:56ch}
+  .brow:hover p{color:rgba(16,16,16,.8)}
+  .brow-tags{margin-top:8px;font:700 10px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.03em;color:var(--muted)}
+  .brow:hover .brow-tags{color:rgba(16,16,16,.75)}
+  .brow-price{font:900 clamp(20px,2.3vw,30px)/1 var(--sans);white-space:nowrap;text-align:right;letter-spacing:-.03em}
+  .brow-price em{font-style:normal;font:700 11px/1 var(--mono);letter-spacing:.02em;margin-right:6px;vertical-align:middle}
+  .brow-price small{font:700 10px/1 var(--mono);letter-spacing:.02em}
+  .extras{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;padding-top:24px}
+  .extras-label{font:800 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+  .extras .tags{margin-top:0}
+  .bmenu{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+  .bmenu-card{border:3px solid var(--ink);background:var(--paper);box-shadow:10px 10px 0 var(--ink);transition:transform .2s,box-shadow .2s}
+  .bmenu-card:hover{transform:translate(-2px,-2px);box-shadow:13px 13px 0 var(--ink)}
+  .bmenu-card header{display:flex;justify-content:space-between;gap:12px;background:var(--ink);color:var(--paper);padding:12px 16px;font:800 12.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.05em}
+  .bmenu-card header span:last-child{color:var(--acid)}
+  .bmenu-card ul{list-style:none;margin:0;padding:16px;display:flex;flex-wrap:wrap;gap:7px}
+  .bmenu-card li{border:2px solid var(--ink);padding:5px 9px;font:700 11px/1.2 var(--mono)}
+  .bgal{display:grid;grid-template-columns:1.35fr .8fr .8fr;gap:clamp(14px,2.4vw,26px);align-items:start}
+  .bphoto{margin:0;border:4px solid var(--paper);background:#222;box-shadow:10px 10px 0 var(--acid);transition:transform .25s,box-shadow .25s}
+  .bphoto img{width:100%;aspect-ratio:4/5;object-fit:cover}
+  .bphoto:nth-child(1){aspect-ratio:auto}
+  .bphoto.tilt-l{transform:rotate(-1.4deg)}
+  .bphoto.tilt-r{transform:rotate(1.2deg)}
+  .bphoto:hover{transform:rotate(0);box-shadow:14px 14px 0 var(--acid)}
+  .bphoto figcaption{padding:9px 10px;background:var(--paper);color:var(--ink);font:800 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.08em;border-top:4px solid var(--paper)}
+  .bphoto-empty{display:grid;place-items:center;background:repeating-linear-gradient(135deg,var(--paper2) 0 16px,var(--acid) 16px 32px);aspect-ratio:4/5}
+  .bphoto-empty .bempty-mark{font:900 clamp(80px,10vw,150px)/1 var(--sans);color:var(--ink);background:var(--paper);padding:4px 16px;border:4px solid var(--ink);box-shadow:8px 8px 0 var(--ink)}
+  .bphoto-empty figcaption{justify-self:stretch;align-self:end;border-top:0;margin:0 10px 10px}
+  .breview a{color:var(--ink);text-decoration:none;border-bottom:3px solid var(--acid);font-size:11px;letter-spacing:.04em;text-transform:uppercase}
+  .rev-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:clamp(26px,4.6vw,56px);align-items:start}
+  .rating-block{border:4px solid var(--ink);background:var(--acid);color:var(--acid-ink);box-shadow:12px 12px 0 var(--ink);padding:24px;display:inline-block;transform:rotate(-1.4deg)}
+  .rating-block .big{font:900 clamp(64px,9vw,118px)/.82 var(--sans);letter-spacing:-.05em;display:flex;align-items:flex-start;gap:6px}
+  .rating-block .big small{font-size:.22em;font-weight:700;margin-top:.5em;letter-spacing:0}
+  .rating-block .stars{display:block;color:var(--acid-ink);font-size:20px;letter-spacing:4px;margin:12px 0 10px}
+  .rating-block p{margin:0;font:800 10.5px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.05em}
+  .rating-block a{display:inline-block;margin-top:14px;font:800 10.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.05em;border-bottom:2px solid currentColor;text-decoration:none}
+  .breview{margin:0 0 16px;border:3px solid var(--ink);background:var(--paper);box-shadow:8px 8px 0 var(--ink);padding:22px}
+  .breview-top{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-bottom:12px;font:700 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em}
+  .breview .stars{color:var(--ink);letter-spacing:2px;font-size:12px}
+  .breview blockquote{margin:0 0 16px;font-size:clamp(16px,1.8vw,20px);line-height:1.45;font-weight:600;letter-spacing:-.01em}
+  .breview figcaption{display:flex;align-items:center;gap:9px;font:700 11.5px/1.3 var(--mono)}
+  .breview .av{display:grid;place-items:center;width:30px;height:30px;background:var(--acid);color:var(--acid-ink);border:2px solid var(--ink);font:800 11px/1 var(--mono)}
+  .breview em{margin-left:auto;font-style:normal;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+  .visit-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(26px,4.6vw,60px);align-items:start}
+  .visit-address{font:900 clamp(28px,3.8vw,50px)/.98 var(--sans);text-transform:uppercase;letter-spacing:-.04em;margin:0 0 10px}
+  .visit-sub{font:700 11px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.06em;margin:0 0 22px;opacity:.8}
+  .hours{border-top:3px solid var(--ink)}
+  .hour{display:flex;justify-content:space-between;gap:14px;padding:10px 0;border-bottom:2px solid rgba(16,16,16,.55);font:700 12px/1.3 var(--mono)}
+  .hour b{font-variant-numeric:tabular-nums}
+  .hour.today span::before{content:"▶";font-size:8px;margin-right:7px}
+  .bmap{position:relative;aspect-ratio:1.14;border:4px solid var(--ink);background:var(--ink);overflow:hidden;box-shadow:10px 10px 0 var(--paper)}
+  .bmap-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(242,240,233,.2) 1px,transparent 1px),linear-gradient(90deg,rgba(242,240,233,.2) 1px,transparent 1px);background-size:12.5% 12.5%}
+  .bmap-road{position:absolute;background:var(--paper);opacity:.9}
+  .bmap-road.a{width:150%;height:14px;left:-25%;top:38%;transform:rotate(-8deg)}
+  .bmap-road.b{width:150%;height:8px;left:-25%;top:73%;transform:rotate(6deg);background:var(--acid)}
+  .bmap-road.c{width:72%;height:10px;left:15%;top:-8%;transform:rotate(72deg)}
+  .bmap-blk{position:absolute;background:var(--paper2)}
+  .bmap-blk.a{width:22%;height:17%;left:9%;top:15%;transform:rotate(-3deg)}
+  .bmap-blk.b{width:16%;height:22%;left:18%;top:49%;transform:rotate(3deg)}
+  .bmap-blk.c{width:19%;height:13%;right:12%;top:57%;transform:rotate(-2deg)}
+  .bmap-pin{position:absolute;left:62%;top:46%;width:22px;height:22px;background:var(--acid);border:3px solid var(--ink);z-index:2;box-shadow:4px 4px 0 var(--paper)}
+  .bmap-tag{position:absolute;left:12px;bottom:12px;background:var(--paper);color:var(--ink);border:2px solid var(--ink);padding:5px 9px;font:800 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.04em}
+  .bmap-link{position:absolute;right:12px;top:12px;background:var(--acid);color:var(--acid-ink);border:2px solid var(--ink);padding:6px 10px;text-decoration:none;font:800 10px/1 var(--mono);text-transform:uppercase}
+  .bmap-cap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;font:700 10px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.04em}
+  .bmap-cap a{text-decoration:none;border-bottom:2px solid currentColor}
+  .contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(26px,4.6vw,56px);align-items:end}
+  .contact-title{font:900 clamp(34px,5vw,70px)/.92 var(--sans);text-transform:uppercase;letter-spacing:-.04em;margin:10px 0 14px}
+  .contact-intro{font-size:15px;line-height:1.5;color:rgba(242,240,233,.75);max-width:46ch;margin:0 0 20px}
+  .big-phone{display:inline-block;font:900 clamp(26px,4.2vw,56px)/1 var(--sans);letter-spacing:-.04em;text-decoration:none;color:var(--paper);margin:0 0 22px;border-bottom:4px solid var(--acid);padding-bottom:6px}
+  .big-phone:hover{color:var(--acid)}
+  .contact-actions{display:flex;gap:12px;flex-wrap:wrap}
+  .contact-meta{border-top:3px solid rgba(242,240,233,.35);display:grid;gap:0}
+  .cm{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:baseline;padding:11px 0;border-bottom:2px solid rgba(242,240,233,.25);font:700 11.5px/1.35 var(--mono);color:var(--paper)}
+  .cm span{font-size:9.5px;text-transform:uppercase;letter-spacing:.08em;color:rgba(242,240,233,.6)}
+  .cm b{text-align:right;font-size:11.5px}
+  .cm a{color:var(--acid);text-decoration:none;border-bottom:1px solid var(--acid)}
+  footer{background:var(--paper);padding:clamp(34px,5vw,60px) 0 28px}
+  .foot-word{font:900 clamp(42px,12.5vw,168px)/.82 var(--sans);text-transform:uppercase;letter-spacing:-.05em;margin:0 0 26px;overflow-wrap:break-word}
+  .foot-row{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap;border-top:3px solid var(--ink);padding-top:16px;font:700 10.5px/1.5 var(--mono);text-transform:uppercase;letter-spacing:.03em}
+  .foot-brand{display:flex;align-items:center;gap:8px}
+  .foot-brand i{width:12px;height:12px;background:var(--acid);border:2px solid var(--ink);display:inline-block}
+  .foot-row a{text-decoration:none;border-bottom:2px solid var(--acid)}
+  .foot-note{max-width:46ch;color:var(--muted)}
+  .js .reveal{opacity:0;transform:translateY(22px) rotate(-1deg);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0ms)}
+  .js .reveal.in{opacity:1;transform:none}
+  .rise{animation:rise .65s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--d,0s)}
+  @keyframes rise{from{opacity:0;transform:translateY(18px) rotate(-.6deg)}to{opacity:1;transform:none}}
+  .settled .reveal,.settled .rise{opacity:1!important;transform:none!important;transition:none!important;animation:none!important}
+  @media(max-width:1080px){.hero-grid{grid-template-columns:1fr;gap:34px}.hero-media{max-width:560px;margin:0 auto;width:100%}.about-grid{grid-template-columns:1fr;gap:30px}.rev-grid{grid-template-columns:1fr;gap:28px}.visit-grid{grid-template-columns:1fr;gap:32px}.contact-grid{grid-template-columns:1fr;gap:26px;align-items:start}.bgal{grid-template-columns:1fr 1fr}.bphoto:nth-child(1){grid-column:span 2}}
+  @media(max-width:860px){:root{--navh:62px}.nav-links{display:none}.brand{font-size:15px}h1{font-size:calc(var(--fs) * .46)}.hero{padding:26px 0 30px}.hero-nums .num{padding-right:16px;margin-right:16px}.num b{font-size:30px}.brow{grid-template-columns:34px minmax(0,1fr);grid-template-areas:"n main" ". price"}.brow-n{grid-area:n}.brow-main{grid-area:main}.brow-price{grid-area:price;text-align:left;margin-top:10px;display:flex;align-items:baseline;gap:8px}.brow-price small{display:inline;margin-top:0}.bgal{grid-template-columns:1fr 1fr;gap:14px}.bphoto:nth-child(1){grid-column:span 2}.bphoto img{aspect-ratio:4/3}.fact{padding:12px 13px}.bmenu{grid-template-columns:1fr}.rating-block{transform:none}.foot-row{flex-direction:column;gap:12px}}
+  @media(max-width:560px){.wrap{padding:0 16px}.hero-cta{flex-direction:column;align-items:stretch}.hero-cta .btn{justify-content:center}.contact-actions{flex-direction:column;align-items:stretch}.contact-actions .btn{justify-content:center}.pf-small{left:-2%;width:44%}.sticker{right:0;top:2%;font-size:10px}.bgal{grid-template-columns:1fr}.bphoto:nth-child(1){grid-column:auto}.bphoto img{aspect-ratio:4/5}.hero-meta{font-size:9.5px}.rating-block .big{font-size:74px}}
+  @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.js .reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="nav" id="nav"><div class="wrap nav-in">
+  <a class="brand" href="#top"><i></i>НСКБилд</a>
+  <nav class="nav-links" aria-label="Разделы">
+    <a href="#about">О нас</a><a href="#services">Услуги</a>
+    <a href="#gallery">Фото</a>
+    <a href="#visit">Как найти</a><a href="#contacts">Контакты</a>
+  </nav>
+  <a class="nav-cta" href="https://wa.me/79130670466">Написать ↗</a>
+</div></header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="kicker rise"><span class="kicker-tag">строительство и ремонт</span><span>Новосибирск / 2026</span></div>
+      <h1 class="rise" style="--fs:130px;--d:.05s">НСКБИЛД<span class="sq" aria-hidden="true"></span></h1>
+      
+      <p class="tagline rise" style="--d:.12s">Ремонт, после которого не переделывают.</p>
+      <div class="hero-nums rise" style="--d:.18s"><div class="num"><b class="small">08:00–17:00</b><span>сегодня</span></div></div>
+      <div class="hero-cta rise" style="--d:.24s">
+        <a class="btn btn-primary" href="https://wa.me/79130670466">Написать в WhatsApp<span class="arr">→</span></a>
+        <a class="btn" href="tel:+79133902222">+7 913 390-22-22</a>
+      </div>
+      <div class="hero-meta rise" style="--d:.3s">
+        <span>Улица Высоцкого, 33</span><span class="sep">/</span>
+        
+        <a href="https://2gis.ru/novosibirsk/firm/70000001007325081">2ГИС ↗</a>
+      </div>
+    </div>
+    <div class="hero-media rise" style="--d:.1s"><div class="photo-frame pf-main"><img src="https://i2.photo.2gis.com/images/branch/0/30258560147730838_a191_656x340.jpg" alt="НСКБилд, строительная компания — фото из 2ГИС" loading="eager"></div>
+       <div class="photo-frame pf-small"><img src="https://i1.photo.2gis.com/images/branch/0/30258560151086332_5709_656x340.jpg" alt="НСКБилд, строительная компания — фото из 2ГИС" loading="eager"></div>
+       <div class="sticker">2ГИС</div></div>
+  </div>
+</section>
+<div class="ticker" aria-hidden="true"><div class="ticker-track"><span class="t-item">Ремонт квартир и помещений<i>✳</i></span><span class="t-item">Фасадные работы<i>✳</i></span><span class="t-item">Консультация<i>✳</i></span><span class="t-item">Новосибирск<i>✳</i></span><span class="t-item">Ремонт квартир и помещений<i>✳</i></span><span class="t-item">Фасадные работы<i>✳</i></span><span class="t-item">Консультация<i>✳</i></span><span class="t-item">Новосибирск<i>✳</i></span></div></div>
+<section id="about"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="sec-label">01 / о нас</div><h2>О компании</h2></div></div>
+  <div class="about-grid">
+    <div class="about-copy"><p class="lead reveal">«НСКБилд» — ремонт и отделка в Новосибирске. В услугах — ремонт квартир и помещений, фасадные работы и консультация.</p><p class="reveal" style="--d:60ms">Сегодня открыты 08:00–17:00. Напишите в WhatsApp — ответим, подскажем по смете и срокам.</p><div class="tags reveal" style="--d:120ms"><span class="tag">Наличный расчёт</span><span class="tag">Оплата через банк</span><span class="tag">Розница</span></div></div>
+    <aside class="reveal" style="--d:90ms"><div class="facts"><div class="fact"><span>Сегодня</span><b>08:00–17:00</b></div><div class="fact"><span>Адрес</span><b>Улица Высоцкого, 33</b></div></div><a class="facts-link" href="https://2gis.ru/novosibirsk/firm/70000001007325081"><span>Карточка в 2ГИС</span><span>↗</span></a></aside>
+  </div>
+</div></section>
+<section id="services" class="band-paper2"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="sec-label">02 / услуги</div><h2>Услуги и цены</h2><p class="sec-intro">Услуги из карточки 2ГИС. Цены и запись уточняйте в WhatsApp.</p></div>
+    
+  </div>
+  <div class="brows"><div class="brow reveal" style="--d:0ms">
+      <span class="brow-n">01</span>
+      <div class="brow-main"><h3>Ремонт квартир и помещений</h3><p>Косметический и капитальный ремонт — от демонтажа до отделки.</p></div>
+      <span class="brow-price"><small>по запросу</small></span>
+    </div><div class="brow reveal" style="--d:50ms">
+      <span class="brow-n">02</span>
+      <div class="brow-main"><h3>Фасадные работы</h3><p>Отделка, утепление и ремонт фасадов.</p></div>
+      <span class="brow-price"><small>по запросу</small></span>
+    </div><div class="brow reveal" style="--d:100ms">
+      <span class="brow-n">03</span>
+      <div class="brow-main"><h3>Консультация</h3><p>Расскажем об услугах и сориентируем по стоимости.</p></div>
+      <span class="brow-price"><small>по запросу</small></span>
+    </div></div>
+</div></section>
+<section id="gallery" class="band-ink"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="sec-label">03 / фото</div><h2>Атмосфера</h2><p class="sec-intro">Фото из карточки организации на 2ГИС.</p></div></div>
+  <div class="bgal"><figure class="bphoto reveal tilt-l" style="--d:0ms"><img src="https://i2.photo.2gis.com/images/branch/0/30258560147730838_a191_656x340.jpg" alt="НСКБилд, строительная компания — фото из 2ГИС" loading="eager"><figcaption>01 / 2ГИС</figcaption></figure><figure class="bphoto reveal tilt-r" style="--d:80ms"><img src="https://i1.photo.2gis.com/images/branch/0/30258560151086332_5709_656x340.jpg" alt="НСКБилд, строительная компания — фото из 2ГИС" loading="eager"><figcaption>02 / 2ГИС</figcaption></figure><figure class="bphoto reveal tilt-l" style="--d:160ms"><img src="https://i8.photo.2gis.com/images/branch/0/30258560150145438_6be9_656x340.jpg" alt="НСКБилд, строительная компания — фото из 2ГИС" loading="eager"><figcaption>03 / 2ГИС</figcaption></figure></div>
+</div></section>
+<section id="reviews"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="sec-label">04 / отзывы</div><h2>Отзывы</h2></div></div>
+  <div class="rev-grid">
+    <div class="rating-block reveal">
+      
+      <p>Отзывы гостей</p>
+      <a href="https://2gis.ru/novosibirsk/firm/70000001007325081">Все отзывы в 2ГИС ↗</a>
+    </div>
+    <div><div class="breview reveal"><blockquote>Отзывы гостей — на карточке организации в 2ГИС. Оценки и полные тексты открыты всем.</blockquote><figcaption><a href="https://2gis.ru/novosibirsk/firm/70000001007325081">Открыть 2ГИС ↗</a></figcaption></div></div>
+  </div>
+</div></section>
+<section id="visit" class="band-acid"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="sec-label">05 / как найти</div><h2>Как нас найти</h2></div></div>
+  <div class="visit-grid">
+    <div class="reveal">
+      <p class="visit-address">Улица Высоцкого, 33</p>
+      <p class="visit-sub">Сегодня 08:00–17:00 / Новосибирск</p>
+      <div class="hours"><div class="hour "><span>Пн</span><b>08:00–17:00</b></div><div class="hour "><span>Вт</span><b>08:00–17:00</b></div><div class="hour today"><span>Ср</span><b>08:00–17:00</b></div><div class="hour "><span>Чт</span><b>08:00–17:00</b></div><div class="hour "><span>Пт</span><b>08:00–17:00</b></div></div>
+      <div class="tags"><span class="tag">Наличный расчёт</span><span class="tag">Оплата через банк</span><span class="tag">Розница</span></div>
+    </div>
+    <div class="reveal" style="--d:90ms"><div class="bmap" role="img" aria-label="Схематичная карта: Улица Высоцкого, 33">
+    <div class="bmap-lines" aria-hidden="true"></div>
+    <span class="bmap-road a" aria-hidden="true"></span><span class="bmap-road b" aria-hidden="true"></span><span class="bmap-road c" aria-hidden="true"></span>
+    <span class="bmap-blk a" aria-hidden="true"></span><span class="bmap-blk b" aria-hidden="true"></span><span class="bmap-blk c" aria-hidden="true"></span>
+    <span class="bmap-pin" aria-hidden="true"></span>
+    <span class="bmap-tag">НСКБилд</span>
+    <a class="bmap-link" href="https://2gis.ru/novosibirsk/firm/70000001007325081">2ГИС ↗</a>
+  </div>
+  <div class="bmap-cap"><span>Схема для ориентира.</span><a href="https://2gis.ru/novosibirsk/firm/70000001007325081">Точный маршрут в 2ГИС ↗</a></div></div>
+  </div>
+</div></section>
+<section id="contacts" class="band-ink"><div class="wrap">
+  <div class="sec-head reveal"><div><div class="sec-label">06 / контакты</div><h2>Напишите нам</h2></div></div>
+  <div class="contact-grid">
+    <div class="reveal">
+      <p class="contact-intro">Ответим в мессенджере, подскажем по смете и срокам.</p>
+      <a class="big-phone" href="tel:+79133902222">+7 913 390-22-22</a>
+      <div class="contact-actions"><a class="btn btn-acid" href="https://wa.me/79130670466">Написать в WhatsApp<span class="arr">→</span></a><a class="btn btn-paper" href="tel:+79133902222">Позвонить</a><a class="btn btn-paper" href="https://2gis.ru/novosibirsk/firm/70000001007325081">2ГИС</a></div>
+    </div>
+    <div class="contact-meta reveal" style="--d:80ms">
+      <div class="cm"><span>Адрес</span><b>Улица Высоцкого, 33</b></div>
+      <div class="cm"><span>Часы</span><b>08:00–17:00</b></div>
+      <div class="cm"><span>Связь</span><b>WhatsApp · Телефон</b></div>
+      <div class="cm"><span>2ГИС</span><b><a href="https://2gis.ru/novosibirsk/firm/70000001007325081">Карточка ↗</a></b></div>
+    </div>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">
+  <div class="foot-word">НСКБилд</div>
+  <div class="foot-row">
+    <div class="foot-brand"><i></i>НСКБилд</div>
+    <div class="foot-note">НСКБилд, строительная компания · Улица Высоцкого, 33 · Новосибирск</div>
+    <div>© 2026 · демо-макет · данные и фото — 2ГИС</div>
+  </div>
+</div></footer>
+<script>
+(function () {
+  var doc = document.documentElement;
+  var revealEls = document.querySelectorAll(".reveal");
+  var countEls = document.querySelectorAll("[data-count]");
+  var nav = document.getElementById("nav");
+  var bar = document.getElementById("progress");
+
+  function fmt(v, dec) { return dec ? Number(v).toFixed(dec).replace(".", ",") : String(Math.round(v)); }
+  function runCount(el) {
+    if (el.getAttribute("data-done") === "1") return;
+    el.setAttribute("data-done", "1");
+    var target = parseFloat(el.getAttribute("data-count"));
+    var dec = parseInt(el.getAttribute("data-dec") || "0", 10);
+    if (!isFinite(target)) return;
+    var t0 = null, dur = 1000;
+    function step(t) {
+      if (t0 === null) t0 = t;
+      var p = Math.min(1, (t - t0) / dur);
+      var e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(target * e, dec);
+      if (p < 1) requestAnimationFrame(step); else el.textContent = fmt(target, dec);
+    }
+    el.textContent = fmt(0, dec);
+    requestAnimationFrame(step);
+  }
+  function showAll() { for (var i = 0; i < revealEls.length; i++) revealEls[i].classList.add("in"); }
+  function finalCounts() {
+    for (var i = 0; i < countEls.length; i++) {
+      var el = countEls[i], t = parseFloat(el.getAttribute("data-count"));
+      var dec = parseInt(el.getAttribute("data-dec") || "0", 10);
+      if (isFinite(t)) el.textContent = fmt(t, dec);
+      el.setAttribute("data-done", "1");
+    }
+  }
+
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (es) {
+      for (var i = 0; i < es.length; i++) if (es[i].isIntersecting) { es[i].target.classList.add("in"); io.unobserve(es[i].target); }
+    }, { threshold: 0.08, rootMargin: "0px 0px -7% 0px" });
+    for (var i = 0; i < revealEls.length; i++) io.observe(revealEls[i]);
+    var cio = new IntersectionObserver(function (es) {
+      for (var i = 0; i < es.length; i++) if (es[i].isIntersecting) { runCount(es[i].target); cio.unobserve(es[i].target); }
+    }, { threshold: 0.35 });
+    for (var j = 0; j < countEls.length; j++) cio.observe(countEls[j]);
+  } else { showAll(); for (var k = 0; k < countEls.length; k++) runCount(countEls[k]); }
+
+  var ticking = false;
+  function parallax() {
+    var els = document.querySelectorAll("[data-parallax]");
+    if (!els.length) return;
+    var vh = window.innerHeight || doc.clientHeight;
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i], sp = parseFloat(el.getAttribute("data-parallax")) || 0;
+      var r = el.getBoundingClientRect();
+      var off = r.top + r.height / 2 - vh / 2;
+      el.style.transform = "translate3d(0," + (off * sp).toFixed(2) + "px,0)";
+    }
+  }
+  function onScroll() {
+    var y = window.pageYOffset || doc.scrollTop || 0;
+    if (nav) nav.classList.toggle("scrolled", y > 24);
+    if (bar) { var h = (document.body.scrollHeight - window.innerHeight) || 1; bar.style.transform = "scaleX(" + Math.min(1, Math.max(0, y / h)).toFixed(4) + ")"; }
+    parallax();
+    ticking = false;
+  }
+  function req() { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }
+  window.addEventListener("scroll", req, { passive: true });
+  window.addEventListener("resize", req);
+  onScroll();
+
+  window.__settle = function () {
+    document.documentElement.classList.add("settled");
+    showAll();
+    finalCounts();
+    window.scrollTo(0, 0);
+    if (nav) nav.classList.remove("scrolled");
+    if (bar) bar.style.transform = "scaleX(0)";
+  };
+  window.__shotsReady = true;
+})();
+</script>
+</body>
+</html>
